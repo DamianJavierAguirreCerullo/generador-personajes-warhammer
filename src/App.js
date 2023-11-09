@@ -3,6 +3,7 @@ import './App.css';
 
 const App = () => {
   // Define las características de cada raza
+
   const caracteristicasRaza = {
     humano: {
       caracRaza: `Stats Por Humano`,
@@ -50,6 +51,31 @@ const App = () => {
     },
   };
 
+  const movimientoRaza = {
+    humano: 4,
+
+    elfo: 5,
+
+    enano: 3,
+
+    halfling: 4,
+  }
+
+
+  const elementosElfo = {
+    elfo1: ["Aed", "Ael", "Aelf", "Aen", "Aeth", "Alth", "An", "And", "Ar", "Arg", "Ast", "Ath", "Ay", "Ban", "Bel", "Beth", "Cad", "Cael", "Caem", "Caeth", "Cal", "Cam", "Cel", "Cir", "El", "Eld", "Elth", "End", "Er", "Ers", "Fand", "Ferg", "Fim", "Fin", "Gal", "Gald", "Gaen", "Gaes", "Ged", "Gen", "Ges", "Geth", "Glor", "Has", "Hath", "Hel", "Heth", "Hith", "Ill", "Ind", "Ist", "Ith", "Iy", "Kor", "Ky", "Kyr", "La", "Lan", "Lil", "Lim", "Loth", "Mal", "Mar", "Math", "Men", "Meth", "Mor", "Mort", "Nal", "Nar", "Nen", "Nor", "Norl", "Ri", "Riabb", "Riann", "Rid", "Rien", "Riell", "Ruth", "Ryn", "Tab", "Tal", "Tan", "Tar", "Teth", "Tel", "Tor", "Ty", "Ul", "Um", "Ur", "Yr", "Yv"],
+
+    elfo2: ["A", "Al", "An", "Ar", "As", "E", "El", "En", "Er", "Es", "Fan", "Fen", "Fin", "I", "Il", "In", "Ir", "Is", "O", "Ol", "On", "Or", "Os", "Ra", "Ral", "Ran", "Re", "Rel", "Ren", "Ril", "Rin", "Ro", "Rol", "Ron", "Ry", "Sa", "Sal", "San", "Se", "Sel", "Sen", "Si", "Sil", "Sin", "So", "Sol", "Son", "U", "Ul"],
+
+    elfo3: ["Baen", "Baine", "Baire", "Bar", "Bhir", "Brier", "Brior", "Brin", "Daen", "Daine", "Daire", "Dar", "Dhil", "Dhir", "Drel", "Drir", "Dror", "Eorl", "Eos", "Eoth", "Fil", "Fin", "Fir", "Hil", "Hin", "Hor", "Il", "In", "Ion", "Ir", "Ith", "Is", "Laen", "Laer", "Laine", "Lan", "Las", "Len", "Les", "Lil", "Lin", "Lir", "Lis", "Lor", "Los", "Mael", "Maen", "Main", "Mal", "Mair", "Mar", "Mil", "Min", "Mir", "Nael", "Naen", "Nael", "Naer", "Nair", "Nail", "Nal", "Nan", "Nar", "Nel", "Nir", "Nir", "Nis", "Nis", "Nis", "Nil", "Nin", "Nir", "Ran", "Ran", "Rea", "Rel", "Rea", "Rel", "Ril", "Ril", "Rin", "Rin", "Ril", "Ril", "Rin", "Rin", "Rir", "Rion", "Rir", "Rior", "Riorl", "Rior", "Riorl", "Riorn", "Ryel", "Taen", "Tain", "Tair", "Thain", "Than", "Thar", "Thel", "Thil", "Thir", "Thir", "Thrin", "Thrin", "Thwe", "Til", "Tin", "Tin", "Tin", "Tis", "Thrill", "Thril", "We", "Yan"],
+  }
+
+  const elementosHalfling = {
+    halfling1: ["Bag", "Balf", "Berc", "Bill", "Bobb", "Bodg", "Bog", "Bom", "Bonn", "Brog", "Bulc", "Bull", "Bust", "Cam", "Cap", "Ced", "Chund", "Clog", "Clof", "Cob", "Cog", "Crum", "Crump", "Curl", "Dod", "Dog", "Dott", "Drog", "Dron", "Durc", "Elm", "Enn", "Ermin", "Ethan", "Falc", "Fald", "Far", "Falm", "Fild", "Flac", "Fogg", "Frit", "Ful", "Func", "Gaff", "Galb", "Gamm", "Gert", "Giff", "Gild", "Gon", "Grop", "Gudd", "Gump", "Gu", "Hal", "Ham", "Hart", "Harp", "Jac", "Jas", "Jasp", "Joc", "Lac", "Lil", "Lob", "Lott", "Lud", "Lurc", "Mad", "Mag", "Man", "May", "Mer", "Mul", "Murc", "Murd", "Nag", "Nell", "Nobb", "Nob", "Od", "Og", "Old", "Pipp", "Podd", "Porc", "Riff", "Rip", "Rob", "Sam", "Supp", "Taff", "Talb", "Talc", "Tay", "Tom", "Wald", "Watt", "Will"],
+
+    halfling2: ["Belly", "Er", "Fast", "In", "It", "Mutch", "O", "Odoc", "Riadoc", "Regar", "Wick", "Wise", "Wit", "Y"],
+  }
+
   const apellidoRaza = {
     humano: ["Adelhof", "Adelhof", "Albrecht", "Altmann", "Atzwig", "Bacher", "Baer", "Baumann", "Becker", "Behn", "Betz", "Beyer", "Bischof", "Boehm", "Breitenbach", "Breuer", "Dahmbach", "Delfholt", "Drakenhof", "Drauwulf", "Durrbein", "Ehrhard", "Eisenhauer", "Eschlimann", "Falkenheim", "Fehr", "Fiegler", "Fleischer", "Frohlich", "Frueh", "Fuchs", "Gaertner", "Gaffwig", "Gebauer", "Godtgraf", "Grunenwald", "Guth", "Haintz", "Herz", "Herzog", "Hirtzel", "Hoch", "Hoefer", "Jaeger", "Jochutz", "Kalb", "Kaltenbach", "Kalb", "Konig", "Kraemer", "Krebs", "Konigsamen", "Konig", "Kuhn", "Kummel", "Lang", "Lankdorf", "Liess", "Lebengut", "Lutzen", "Machholt", "Meusmann", "Meyer", "Mohr", "Nachtmann", "Naubhof", "Netzhoch", "Neumann", "Niederlitz", "Nuhr", "Oberholtzer", "Ohrsten", "Otzlowe", "Reichert", "Reifsneider", "Riese", "Rohrig", "Reiss", "Schwalb", "Steiner", "Tabbeck", "Teuber", "Tolzen", "Trachsel", "Weber", "Wechsler", "Wirtz", "Widmann", "Widmer", "Veit", "Schaumer", "Vogt", "Vogel", "Zumwald"],
 
@@ -64,23 +90,32 @@ const App = () => {
     humano: ["Abelhard", "Abelhelm", "Admund", "Adred", "Adric", "Agis", "Alaric", "Alberic", "Albrecht", "Aldebrand", "Aldred", "Aldric", "Alfreid", "Altmar", "Alric", "Andre", "Andred", "Andric", "Anshelm", "Anton", "Arne", "Arnulf", "Axel", "Axelbrand", "Baldred", "Baldric", "Balthasar", "Barnabas", "Bart", "Bartolf", "Bartomar", "Bernolt", "Bertolf", "Boris", "Bruno", "Burgolf", "Calvin", "Casimir", "Caspar", "Cedred", "Conrad", "Corvin", "Dagmar", "Dankmar", "Dankred", "Diebold", "Diel", "Dietfried", "Dietmar", "Dietmund", "Dietrich", "Dirk", "Donat", "Eber", "Eckel", "Eckhart", "Edgar", "Emil", "Engel", "Engelbert", "Eustasius", "Ewald", "Faber", "Faustus", "Felix", "Ferdinand", "Gerber", "Gerhart", "Gerlach", "Gernar", "Gerolf", "Gilbrecht", "Gisbert", "Giselbrecht", "Gismar", "Goran", "Gosbert", "Goswin", "Gotfried", "Gothard", "Gottolf", "Gotwin", "Gregor", "Greimold", "Grimwold", "Griswold", "Guido", "Gundolf", "Gundred", "Gunnar", "Gunter", "Gustaf", "Hadred", "Hadwin", "Hagar", "Hagen", "Haldred", "Halman", "Hamlyn", "Hans", "Harbrand", "Harman", "Hartmann", "Haug", "Heidric", "Heimar", "Heinfried", "Heinman", "Heinrich", "Helmur", "Henlyn", "Hermann", "Herwin", "Hildebart", "Hildebrand", "Hildemar", "Hildemund", "Hildred", "Hildric", "Horst", "Hugo", "Igor", "Ingwald", "Ingwald", "Jander", "Jekil", "Jodokus", "Johann", "Jonas", "Jorg", "Jorn", "Josef", "Jost", "Jurgen", "Jurgen", "Karl", "Kaspar", "Klaus", "Kleber", "Konrad", "Konradin", "Kurt", "Lamprecht", "Lanfried", "Lanric", "Lanwin", "Leo", "Levin", "Liebert", "Liebrecht", "Liebwin", "Lienhart", "Linus", "Lodwig", "Lothar", "Lucius", "Ludwig", "Luitpold", "Lukas", "Lupold", "Lupus", "Luther", "Lutolf", "Leopold", "Madred", "Magnus", "Mandred", "Manfred", "Mathias", "Max",
       "Maximillian", "Meiner", "Meinhart", "Meinolf", "Mekel", "Merkel", "Nat", "Nathandar", "Nicodemus", "Odamar", "Odric", "Odwin", "Olbrecht", "Oldred", "Oldric", "Ortlieb", "Ortolf", "Orwin", "Oswald", "Osric", "Oswin", "Otfried", "Otto", "Otwin", "Paulus", "Prospero", "Ragen", "Ralf", "Rambrecht", "Randulf", "Ranulf", "Ranald", "Reikhard", "Rein", "Reiner", "Reinhard", "Reinolt", "Reuban", "Rigo", "Roderic", "Rolf", "Rudel", "Rudgar", "Rudolf", "Rudolf", "Rufus", "Ruprecht", "Ruprecht", "Sebastian", "Semund", "Sepp", "Sieger", "Siegfried", "Siegfried", "Siegmund", "Siegfried", "Siegmund", "Sigismund", "Sigric", "Sigric", "Sigismund", "Sigric", "Steffan", "Tankred", "Tankred", "Tilmann", "Tilmann", "Tomas", "Theodoric", "Theodoric", "Valdred", "Valdric", "Valdred", "Valdric", "Varl", "Viggo", "Viktor", "Werner", "Wolkhard", "Wolkhard", "Wolfram", "Wolfhart", "Wolfram", "Wolfram", "Wolfgang", "Wolfgang", "Wolfgang", "Wulf", "Xavier", "Xavier", "Xavier", "Xavier"],
 
-    elfo: ["Aed", "Ael", "Aelf", "Aen", "Aeth", "Alth", "An", "And", "Ar", "Arg", "Ast", "Ath", "Ay", "Ban", "Bel", "Beth", "Cad", "Cael", "Caem", "Caeth", "Cal", "Cam", "Cel", "Cir", "El", "Eld", "Elth", "End", "Er", "Ers", "Fand", "Ferg", "Fim", "Fin", "Gal", "Gald", "Gaen", "Gaes", "Ged", "Gen", "Ges", "Geth", "Glor", "Has", "Hath", "Hel", "Heth", "Hith", "Ill", "Ind", "Ist", "Ith", "Iy", "Kor", "Ky", "Kyr", "La", "Lan", "Lil", "Lim", "Loth", "Mal", "Mar", "Math", "Men", "Meth", "Mor", "Mort", "Nal", "Nar", "Nen", "Nor", "Norl", "Ri", "Riabb", "Riann", "Rid", "Rien", "Riell", "Ruth", "Ryn", "Tab", "Tal", "Tan", "Tar", "Teth", "Tel", "Tor", "Ty", "Ul", "Um", "Ur", "Yr", "Yv"],
+    elfo: NombreElfo(),
 
-    // elfo2: ["A", "Al", "An", "Ar", "As", "E", "El", "En", "Er", "Es", "Fan", "Fen", "Fin", "I", "Il", "In", "Ir", "Is", "O", "Ol", "On", "Or", "Os", "Ra", "Ral", "Ran", "Re", "Rel", "Ren", "Ril", "Rin", "Ro", "Rol", "Ron", "Ry", "Sa", "Sal", "San", "Se", "Sel", "Sen", "Si", "Sil", "Sin", "So", "Sol", "Son", "U", "Ul"],
-
-    // elfo3: ["Baen", "Baine", "Baire", "Bar", "Bhir", "Brier", "Brior", "Brin", "Daen", "Daine", "Daire", "Dar", "Dhil", "Dhir", "Drel", "Drir", "Dror", "Eorl", "Eos", "Eoth", "Fil", "Fin", "Fir", "Hil", "Hin", "Hor", "Il", "In", "Ion", "Ir", "Ith", "Is", "Laen", "Laer", "Laine", "Lan", "Las", "Len", "Les", "Lil", "Lin", "Lir", "Lis", "Lor", "Los", "Mael", "Maen", "Main", "Mal", "Mair", "Mar", "Mil", "Min", "Mir", "Nael", "Naen", "Nael", "Naer", "Nair", "Nail", "Nal", "Nan", "Nar", "Nel", "Nir", "Nir", "Nis", "Nis", "Nis", "Nil", "Nin", "Nir", "Ran", "Ran", "Rea", "Rel", "Rea", "Rel", "Ril", "Ril", "Rin", "Rin", "Ril", "Ril", "Rin", "Rin", "Rir", "Rion", "Rir", "Rior", "Riorl", "Rior", "Riorl", "Riorn", "Ryel", "Taen", "Tain", "Tair", "Thain", "Than", "Thar", "Thel", "Thil", "Thir", "Thir", "Thrin", "Thrin", "Thwe", "Til", "Tin", "Tin", "Tin", "Tis", "Thrill", "Thril", "We", "Yan"],
-
-    halfling: ["Bag", "Balf", "Berc", "Bill", "Bobb", "Bodg", "Bog", "Bom", "Bonn", "Brog", "Bulc", "Bull", "Bust", "Cam", "Cap", "Ced", "Chund", "Clog", "Clof", "Cob", "Cog", "Crum", "Crump", "Curl", "Dod", "Dog", "Dott", "Drog", "Dron", "Durc", "Elm", "Enn", "Ermin", "Ethan", "Falc", "Fald", "Far", "Falm", "Fild", "Flac", "Fogg", "Frit", "Ful", "Func", "Gaff", "Galb", "Gamm", "Gert", "Giff", "Gild", "Gon", "Grop", "Gudd", "Gump", "Gu", "Hal", "Ham", "Hart", "Harp", "Jac", "Jas", "Jasp", "Joc", "Lac", "Lil", "Lob", "Lott", "Lud", "Lurc", "Mad", "Mag", "Man", "May", "Mer", "Mul", "Murc", "Murd", "Nag", "Nell", "Nobb", "Nob", "Od", "Og", "Old", "Pipp", "Podd", "Porc", "Riff", "Rip", "Rob", "Sam", "Supp", "Taff", "Talb", "Talc", "Tay", "Tom", "Wald", "Watt", "Will"],
-
-    // halfling2: ["Belly", "Er", "Fast", "In", "It", "Mutch", "O", "Odoc", "Riadoc", "Regar", "Wick", "Wise", "Wit", "Y"],
+    halfling: NombreHalfling(),
 
     enano: ["Bin", "Bor", "Dil", "Din", "Dok", "Dor", "Drin", "Fin", "Gan", "Gar", "Gil", "Gin", "Gni", "Grom", "Grond", "Grund", "Grunt", "Gul", "Gund", "Gun", "Ki", "Kin", "Krag", "Kri", "Krin", "Li", "Lin", "Lik", "Lok", "Lun", "Min", "Mir", "Nin", "Nir", "Rag", "Rik", "Rin", "Rin", "Rik", "Rik", "Rin", "Rin", "Rin", "Rin", "Rin", "Rin", "Ri", "Rig", "Run", "Rok", "Ror", "Skin", "Tin", "Tok", "Trek", "Trok", "Zin", "Zor"]
   }
 
-  const DosDeDiez = () => {
+  function DosDeDiez() {
     const num1 = (Math.floor(Math.random() * 10) + 1) + (Math.floor(Math.random() * 10) + 1);
     return num1;
   };
+
+  function NombreElfo() {
+    const parte1 = elementosElfo.elfo1[[Math.floor(Math.random() * elementosElfo.elfo1.length)]]
+    const parte2 = elementosElfo.elfo2[[Math.floor(Math.random() * elementosElfo.elfo2.length)]]
+    const parte3 = elementosElfo.elfo3[[Math.floor(Math.random() * elementosElfo.elfo3.length)]]
+    const nombreElfo = parte1 + parte2 + parte3
+    return [nombreElfo]
+  }
+
+  function NombreHalfling() {
+    const parte1 = elementosHalfling.halfling1[[Math.floor(Math.random() * elementosHalfling.halfling1.length)]]
+    const parte2 = elementosHalfling.halfling2[[Math.floor(Math.random() * elementosHalfling.halfling2.length)]]
+    const nombreHalfling = parte1 + parte2
+    return [nombreHalfling]
+  }
 
   // Define las profesiones para cada raza
   const profesionesRaza = {
@@ -101,11 +136,39 @@ const App = () => {
     elfo: [9, 9, 9, 10, 10, 10, 11, 11, 11, 12],
   }
 
+  const alturaRaza = {
+    humano: 165 + DosDeDiez(),
+    enano: 135 + DosDeDiez(),
+    halfling: 105 + DosDeDiez(),
+    elfo: 170 + DosDeDiez()
+    
+  }
+  const pesoRaza = {
+    humano: [47,50,52,54,56,59,61,63,65,68,70,72,74,77,79,81,86,90,95,100],
+    enano: [40,43,45,47,50,52,54,56,59,61,63,65,68,70,72,74,77,79,81,84],
+    halfling: [34,34,36,36,38,38,40,43,45,45,47,50,52,54,56,59,61,63,65],
+    elfo: [36,38,40,43,45,47,50,51,56,59,61,63,65,68,70,72,74,77,79]
+  }
+
+  const colorDePelo = {
+    humano: ["Rubio ceniza","Rubio oscuro","Rubio","Cobrizo","Rojo","Castaño claro","Castaño","Castaño","Castaño oscuro","Negro"], 
+    enano:   ["Rubio ceniza","Rubio","Rojo","Cobrizo","Castaño claro","Castaño","Castaño","Castaño oscuro","Negro azulado","Negro"],
+    halfling: ["Rubio ceniza","Rubio oscuro","Rubio","Rubio","Cobrizo","Rojo","Castaño claro","Castaño","Castaño oscuro","Negro"],
+    elfo: [ "Plateado" ,"Rubio ceniza" ,"Rubio oscuro","Rubio" ,"Cobrizo" ,"Castaño claro" ,"Castaño claro","Castaño"    ,"Castaño oscuro","Negro"]   
+  }
+
+  const colorDeOjos = {
+    humano: ["Gris claro","Gris azulado","Azules","Verdes","Cobrizos","Marrón claro","Marrones","Marrónes oscuro","Violetas","Negros"], 
+    enano:   ["Gris claro","Azules","Cobrizos","Marrón claro","Marrón claro","Marrones","Marrones","Marrón oscuro","Marrón oscuro","Violetas"],
+    halfling: ["Azules","Avellana","Avellana","Marrón claro","Marrón claro","Marrones","Marrones","Marrón oscuro","Marrón oscuro","Marrón oscuro"],
+    elfo: ["Zarco","Azules","Verdes","Cobrizos","Marrón claro","Marrones","Marrón oscuro","Plateados","Violetas","Negros"]   
+  }
+
   const destinoRaza = {
-    humano: [2, 2, 2, 2, 3, 3, 3, 3, 3, 3],
-    enano: [1, 1, 1, 1, 2, 2, 2, 2, 2, 2],
+    humano:  [2, 2, 2, 2, 3, 3, 3, 3, 3, 3],
+    enano:   [1, 1, 1, 1, 2, 2, 2, 2, 2, 2],
     halfling: [2, 2, 2, 2, 2, 2, 2, 3, 3, 3],
-    elfo: [1, 1, 1, 1, 2, 2, 2, 3, 3, 3],
+    elfo:     [1, 1, 1, 1, 2, 2, 2, 3, 3, 3],
   }
 
   const talentosAleatorios = ["Ambidiestro", "Cortés", "Genio aritmético", "Guerrero nato", "Imperturbable", "Imitador", "Intelectual", "Muy fuerte", "Muy resistente", "Oído aguzado", "Pies ligeros", "Puntería", "Recio", "Reflejos rápidos", "Resistencia a enfermedades", "Resistencia a la magia", "Resistencia a venenos", "Robusto", "Sangre fría", "Sexto sentido", "Suerte", "Vista excelente"]
@@ -121,7 +184,7 @@ const App = () => {
 
     const razaStats = caracteristicasRaza[razaAleatoria]
 
-    const profesiones = profesionesRaza[razaAleatoria]; // Utiliza profesionesRaza para obtener las profesiones de la raza.
+    const profesiones = profesionesRaza[razaAleatoria];
 
     const heridas = heridasRaza[razaAleatoria]
 
@@ -130,6 +193,14 @@ const App = () => {
     const nombre = nombreRaza[razaAleatoria]
 
     const apellido = apellidoRaza[razaAleatoria]
+
+    const movimiento = movimientoRaza[razaAleatoria]
+
+    const peso = pesoRaza[razaAleatoria]
+
+    const pelo = colorDePelo[razaAleatoria]
+
+    const ojos = colorDeOjos[razaAleatoria]
 
     const profesionAleatoria = profesiones[Math.floor(Math.random() * profesiones.length)];
 
@@ -141,6 +212,16 @@ const App = () => {
 
     const apellidoAleatorio = apellido[Math.floor(Math.random() * apellido.length)]
 
+    const alturaAleatoria = alturaRaza[razaAleatoria]
+
+    const pesoAleatorio = peso[Math.floor(Math.random() * peso.length)]
+
+    const peloAleatorio = pelo[Math.floor(Math.random() * pelo.length)]
+
+    const ojosAleatorio = ojos[Math.floor(Math.random() * ojos.length)]
+
+    console.log(alturaAleatoria)
+
     const personajeGenerado = {
       nombre: nombreAleatorio,
       apellido: apellidoAleatorio,
@@ -148,6 +229,11 @@ const App = () => {
       profesion: profesionAleatoria,
       heridas: heridasAleatorias,
       destino: destinoAleatorio,
+      movimiento: movimiento,
+      altura: alturaAleatoria,
+      peso: pesoAleatorio,
+      pelo: peloAleatorio,
+      ojos: ojosAleatorio,
       caracteristicas: {
         Caracteristica: "caracAleatoria",
         HA: DosDeDiez(),
@@ -177,9 +263,9 @@ const App = () => {
             <h2>Personaje Generado:</h2>
             <p>Nombre: {personaje.nombre} {personaje.apellido}</p>
             <p>Raza: {personaje.raza}</p>
-            <p>Profesión: {personaje.profesion}</p>
             <p>Heridas: {personaje.heridas}</p>
             <p>Puntos de Destino: {personaje.destino}</p>
+            <p>Movimiento: {personaje.movimiento}</p>
             <table>
               <tbody>
                 {Object.keys(personaje.caracteristicas).map((caracteristicaNombre) => (
@@ -203,6 +289,12 @@ const App = () => {
                 ))}
               </tbody>
             </table>
+            <p>Profesión: {personaje.profesion}</p>
+            <h3>Rasgos fisicos</h3>
+            <p>Altura: {personaje.altura} cm</p>
+            <p>Peso: {personaje.peso} kg</p>
+            <p>Color de pelo: {personaje.pelo}</p>
+            <p>Color de ojos: {personaje.ojos}</p>
           </div>
         )}
       </div>
