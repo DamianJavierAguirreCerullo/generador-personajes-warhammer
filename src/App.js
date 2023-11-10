@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import './App.css';
 
 const App = () => {
-  // Define las características de cada raza
 
   const caracteristicasRaza = {
     humano: {
@@ -97,6 +96,35 @@ const App = () => {
     enano: ["Bin", "Bor", "Dil", "Din", "Dok", "Dor", "Drin", "Fin", "Gan", "Gar", "Gil", "Gin", "Gni", "Grom", "Grond", "Grund", "Grunt", "Gul", "Gund", "Gun", "Ki", "Kin", "Krag", "Kri", "Krin", "Li", "Lin", "Lik", "Lok", "Lun", "Min", "Mir", "Nin", "Nir", "Rag", "Rik", "Rin", "Rin", "Rik", "Rik", "Rin", "Rin", "Rin", "Rin", "Rin", "Rin", "Ri", "Rig", "Run", "Rok", "Ror", "Skin", "Tin", "Tok", "Trek", "Trok", "Zin", "Zor"]
   }
 
+  const talentosAleatorios = ["Ambidiestro", "Cortés", "Genio aritmético", "Guerrero nato", "Imperturbable", "Imitador", "Intelectual", "Muy fuerte", "Muy resistente", "Oído aguzado", "Pies ligeros", "Puntería", "Recio", "Reflejos rápidos", "Resistencia a enfermedades", "Resistencia a la magia", "Resistencia a venenos", "Robusto", "Sangre fría", "Sexto sentido", "Suerte", "Vista excelente"]
+
+  const habilidadesRaza = {
+    humano: ["Cotilleo","Hablar idioma(Reikspiel)","Sabiduría popular (el Imperio)"],
+
+    elfo: ["Hablar idioma (Eltharin)","Hablar idioma (Reikspiel)","Sabiduría popular (Elfos)"],
+
+    enano: ["Hablar idioma (Khazalid)","Hablar idioma (Reikspiel)","Oficio (Minero, Herrero o Cantero)","Sabiduría popular (Enanos)"],
+
+    halfling: ["Cotilleo","Hablar idioma (Halfling)","Hablar idioma (Reikspiel)","Oficio (Cocinero o Granjero)","Sabiduría académica (Genealogía/Heráldica)","Sabiduría popular (Halfling)"]
+  }
+
+  
+  const talentosRaza = {
+    humano: [TalentoAleatorio(),TalentoAleatorio()],
+
+    elfo: ["Afinidad con el Aethyr o Especialista en armas (arco largo)","Sangre fría o Intelectual","Visión nocturna","Vista exelente"],
+
+    enano: ["Artesanía enana","Audaz","Odio visceral","Resistencia a la magia","Robusto","Visión nocturna"],
+
+    halfling: ["Especialidad en armas (honda)","Resistencia al Caos","Visión nocturna",TalentoAleatorio()]
+  }
+
+
+  function TalentoAleatorio() {
+    const talento = talentosAleatorios[Math.floor(Math.random() * talentosAleatorios.length)]
+    return talento;
+  }
+
   function DosDeDiez() {
     const num1 = (Math.floor(Math.random() * 10) + 1) + (Math.floor(Math.random() * 10) + 1);
     return num1;
@@ -171,7 +199,6 @@ const App = () => {
     elfo:     [1, 1, 1, 1, 2, 2, 2, 3, 3, 3],
   }
 
-  const talentosAleatorios = ["Ambidiestro", "Cortés", "Genio aritmético", "Guerrero nato", "Imperturbable", "Imitador", "Intelectual", "Muy fuerte", "Muy resistente", "Oído aguzado", "Pies ligeros", "Puntería", "Recio", "Reflejos rápidos", "Resistencia a enfermedades", "Resistencia a la magia", "Resistencia a venenos", "Robusto", "Sangre fría", "Sexto sentido", "Suerte", "Vista excelente"]
 
   const [mensaje, setMensaje] = useState('Bienvenidos al generador de personajes de Warhammer Fantasy 2nd Edition. Toque el botón para iniciar el generador.');
 
@@ -202,6 +229,10 @@ const App = () => {
 
     const ojos = colorDeOjos[razaAleatoria]
 
+    const habilidadesDeRaza = habilidadesRaza[razaAleatoria]
+
+    const talentosDeRaza = talentosRaza[razaAleatoria]
+
     const profesionAleatoria = profesiones[Math.floor(Math.random() * profesiones.length)];
 
     const destinoAleatorio = destino[Math.floor(Math.random() * destino.length)];
@@ -220,8 +251,6 @@ const App = () => {
 
     const ojosAleatorio = ojos[Math.floor(Math.random() * ojos.length)]
 
-    console.log(alturaAleatoria)
-
     const personajeGenerado = {
       nombre: nombreAleatorio,
       apellido: apellidoAleatorio,
@@ -234,6 +263,8 @@ const App = () => {
       peso: pesoAleatorio,
       pelo: peloAleatorio,
       ojos: ojosAleatorio,
+      habilidadesDeRaza: habilidadesDeRaza,
+      talentosDeRaza: talentosDeRaza,
       caracteristicas: {
         Caracteristica: "caracAleatoria",
         HA: DosDeDiez(),
@@ -261,11 +292,13 @@ const App = () => {
         {personaje && (
           <div>
             <h2>Personaje Generado:</h2>
-            <p>Nombre: {personaje.nombre} {personaje.apellido}</p>
-            <p>Raza: {personaje.raza}</p>
-            <p>Heridas: {personaje.heridas}</p>
-            <p>Puntos de Destino: {personaje.destino}</p>
-            <p>Movimiento: {personaje.movimiento}</p>
+            <p><b>Nombre:</b> {personaje.nombre} {personaje.apellido}</p>
+            <p><b>Raza:</b> {personaje.raza}</p>
+            <p><b>Heridas:</b> {personaje.heridas}</p>
+            <p><b>Puntos de Destino:</b> {personaje.destino}</p>
+            <p><b>Movimiento:</b> {personaje.movimiento}</p>
+            <p><b>Habilidades por raza:</b> {personaje.habilidadesDeRaza.join(', ')}</p>
+            <p><b>Talentos por raza:</b> {personaje.talentosDeRaza.join(', ')}</p>
             <table>
               <tbody>
                 {Object.keys(personaje.caracteristicas).map((caracteristicaNombre) => (
@@ -289,7 +322,7 @@ const App = () => {
                 ))}
               </tbody>
             </table>
-            <p>Profesión: {personaje.profesion}</p>
+            <h2>Profesión: {personaje.profesion}</h2>
             <h3>Rasgos fisicos</h3>
             <p>Altura: {personaje.altura} cm</p>
             <p>Peso: {personaje.peso} kg</p>
