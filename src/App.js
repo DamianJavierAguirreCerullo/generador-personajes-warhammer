@@ -3,7 +3,8 @@ import './App.css';
 
 const App = () => {
 
-  const caracteristicasRaza = {
+  const caracteristicasRaza_objeto = {
+
     humano: {
       caracRaza: `Stats Por Humano`,
       HA: 20,
@@ -15,6 +16,7 @@ const App = () => {
       FV: 20,
       Em: 20,
     },
+
     enano: {
       caracRaza: "Stats Por Enano",
       HA: 30,
@@ -26,6 +28,7 @@ const App = () => {
       FV: 20,
       Em: 10,
     },
+
     halfling: {
       caracRaza: "Stats Por Halfling",
       HA: 10,
@@ -37,6 +40,7 @@ const App = () => {
       FV: 20,
       Em: 30,
     },
+
     elfo: {
       caracRaza: "Stats Por Elfo",
       HA: 20,
@@ -47,10 +51,10 @@ const App = () => {
       Int: 20,
       FV: 20,
       Em: 20,
-    },
+    }
   };
 
-  const movimientoRaza = {
+  const movimientoRaza_objeto = {
     
     humano: 4,
 
@@ -62,7 +66,7 @@ const App = () => {
   }
 
 
-  const elementosElfo = {
+  const elementosElfo__objeto = {
 
     elfo1: ["Aed", "Ael", "Aelf", "Aen", "Aeth", "Alth", "An", "And", "Ar", "Arg", "Ast", "Ath", "Ay", "Ban", "Bel", "Beth", "Cad", "Cael", "Caem", "Caeth", "Cal", "Cam", "Cel", "Cir", "El", "Eld", "Elth", "End", "Er", "Ers", "Fand", "Ferg", "Fim", "Fin", "Gal", "Gald", "Gaen", "Gaes", "Ged", "Gen", "Ges", "Geth", "Glor", "Has", "Hath", "Hel", "Heth", "Hith", "Ill", "Ind", "Ist", "Ith", "Iy", "Kor", "Ky", "Kyr", "La", "Lan", "Lil", "Lim", "Loth", "Mal", "Mar", "Math", "Men", "Meth", "Mor", "Mort", "Nal", "Nar", "Nen", "Nor", "Norl", "Ri", "Riabb", "Riann", "Rid", "Rien", "Riell", "Ruth", "Ryn", "Tab", "Tal", "Tan", "Tar", "Teth", "Tel", "Tor", "Ty", "Ul", "Um", "Ur", "Yr", "Yv"],
 
@@ -71,13 +75,15 @@ const App = () => {
     elfo3: ["Baen", "Baine", "Baire", "Bar", "Bhir", "Brier", "Brior", "Brin", "Daen", "Daine", "Daire", "Dar", "Dhil", "Dhir", "Drel", "Drir", "Dror", "Eorl", "Eos", "Eoth", "Fil", "Fin", "Fir", "Hil", "Hin", "Hor", "Il", "In", "Ion", "Ir", "Ith", "Is", "Laen", "Laer", "Laine", "Lan", "Las", "Len", "Les", "Lil", "Lin", "Lir", "Lis", "Lor", "Los", "Mael", "Maen", "Main", "Mal", "Mair", "Mar", "Mil", "Min", "Mir", "Nael", "Naen", "Nael", "Naer", "Nair", "Nail", "Nal", "Nan", "Nar", "Nel", "Nir", "Nir", "Nis", "Nis", "Nis", "Nil", "Nin", "Nir", "Ran", "Ran", "Rea", "Rel", "Rea", "Rel", "Ril", "Ril", "Rin", "Rin", "Ril", "Ril", "Rin", "Rin", "Rir", "Rion", "Rir", "Rior", "Riorl", "Rior", "Riorl", "Riorn", "Ryel", "Taen", "Tain", "Tair", "Thain", "Than", "Thar", "Thel", "Thil", "Thir", "Thir", "Thrin", "Thrin", "Thwe", "Til", "Tin", "Tin", "Tin", "Tis", "Thrill", "Thril", "We", "Yan"],
   }
 
-  const elementosHalfling = {
+  const elementosHalfling_objeto = {
+    
     halfling1: ["Bag", "Balf", "Berc", "Bill", "Bobb", "Bodg", "Bog", "Bom", "Bonn", "Brog", "Bulc", "Bull", "Bust", "Cam", "Cap", "Ced", "Chund", "Clog", "Clof", "Cob", "Cog", "Crum", "Crump", "Curl", "Dod", "Dog", "Dott", "Drog", "Dron", "Durc", "Elm", "Enn", "Ermin", "Ethan", "Falc", "Fald", "Far", "Falm", "Fild", "Flac", "Fogg", "Frit", "Ful", "Func", "Gaff", "Galb", "Gamm", "Gert", "Giff", "Gild", "Gon", "Grop", "Gudd", "Gump", "Gu", "Hal", "Ham", "Hart", "Harp", "Jac", "Jas", "Jasp", "Joc", "Lac", "Lil", "Lob", "Lott", "Lud", "Lurc", "Mad", "Mag", "Man", "May", "Mer", "Mul", "Murc", "Murd", "Nag", "Nell", "Nobb", "Nob", "Od", "Og", "Old", "Pipp", "Podd", "Porc", "Riff", "Rip", "Rob", "Sam", "Supp", "Taff", "Talb", "Talc", "Tay", "Tom", "Wald", "Watt", "Will"],
 
     halfling2: ["Belly", "Er", "Fast", "In", "It", "Mutch", "O", "Odoc", "Riadoc", "Regar", "Wick", "Wise", "Wit", "Y"],
   }
 
-  const apellidoRaza = {
+  const apellidoRaza_objeto = {
+    
     humano: ["Adelhof", "Adelhof", "Albrecht", "Altmann", "Atzwig", "Bacher", "Baer", "Baumann", "Becker", "Behn", "Betz", "Beyer", "Bischof", "Boehm", "Breitenbach", "Breuer", "Dahmbach", "Delfholt", "Drakenhof", "Drauwulf", "Durrbein", "Ehrhard", "Eisenhauer", "Eschlimann", "Falkenheim", "Fehr", "Fiegler", "Fleischer", "Frohlich", "Frueh", "Fuchs", "Gaertner", "Gaffwig", "Gebauer", "Godtgraf", "Grunenwald", "Guth", "Haintz", "Herz", "Herzog", "Hirtzel", "Hoch", "Hoefer", "Jaeger", "Jochutz", "Kalb", "Kaltenbach", "Kalb", "Konig", "Kraemer", "Krebs", "Konigsamen", "Konig", "Kuhn", "Kummel", "Lang", "Lankdorf", "Liess", "Lebengut", "Lutzen", "Machholt", "Meusmann", "Meyer", "Mohr", "Nachtmann", "Naubhof", "Netzhoch", "Neumann", "Niederlitz", "Nuhr", "Oberholtzer", "Ohrsten", "Otzlowe", "Reichert", "Reifsneider", "Riese", "Rohrig", "Reiss", "Schwalb", "Steiner", "Tabbeck", "Teuber", "Tolzen", "Trachsel", "Weber", "Wechsler", "Wirtz", "Widmann", "Widmer", "Veit", "Schaumer", "Vogt", "Vogel", "Zumwald"],
 
     elfo: ["Blackbough", "Blackcairn", "Blackwood", "Bluefeather", "Bluewing", "Boldheart", "Boldspear", "Bravehelm", "Bravestar", "Brightcrown", "Brightcrown", "Brightwand", "Coolstream", "Coolwater", "Darkeagle", "Darkmane", "Darkmoon", "Eldenkin", "Eldendrake", "Fairowl", "Fastblade", "Fastspear", "Fastwing", "Fellhand", "Fellblade", "Fleetfoot", "Fleet-though", "Fleetwing", "Gladheart", "Gladshore", "Gladwind", "Goldenbrook", "Goldencloud", "Goldenhair", "Goodroot", "Goodwood", "Greendale", "Greenfeather", "Greenglade", "Hawkhelm", "Hawkstar", "Hawkwood", "Hawkstar", "Hawkwood", "Hawkstar", "Keeneye", "Keengaze", "Keensight", "Kindheart", "Kindwater", "Lightfoot", "Lightwing", "Longleap", "Longroad", "Oldmane", "Oldtower", "Palemoon", "Palewand", "Purelight", "Puresky", "Seagleam", "Seamist", "Shadowhelm", "Shadowseer", "Shadowstar", "Sharpblade", "Shiningmoon", "Shininghelm", "Silverdawn", "Silverhair", "Silverleaf", "Sure-eye", "Surehand", "Swiftbow", "Swifthand", "Swiftwing", "Slendertree", "Slenderwand", "Soaringleaf", "Soaringsun", "Starbrow", "Starfire", "Stargaze", "Strongarrow", "Stronghand", "Strongtower", "Tallbeam", "Tallhelm", "Tallhelm", "Tallhelm", "Tallhelm", "Tenderheart", "Tendersong", "Truefriend", "Trueseer", "Wiseheart", "Wisewind", "Whitelock", "Whitereed", "Whitetor", "Youngleaf", "Youngstar", "Youngwood"],
@@ -87,7 +93,7 @@ const App = () => {
     enano: ["Al", "Ala", "Ath", "Athran", "Bal", "Bala", "Bara", "Bel", "Bela", "Bok", "Bor", "Bur", "Da", "Dam", "Dora", "Drok", "Drong", "Dur", "Dwal", "Ela", "Elda", "Elan", "Fa", "Far", "Fara", "Fima", "Firen", "Fur", "Fura", "Ga", "Gim", "Gol", "Gollen", "Got", "Gota", "Grim", "Gro", "Grun", "Hak", "Haka", "Har", "Hega", "Hur", "Kad", "Kar", "Kata", "Kaz", "Kaza", "Krag", "Logaz", "Lok", "Lun", "Mo", "Mola", "Mor", "Mora", "Nola", "Nor", "Noran", "Nun", "Oda", "Oka", "Olla", "Olf", "Oth", "Othra", "Ro", "Ror", "Roran", "Ska", "Skalla", "Skalf", "Skar", "Skor", "Skora", "Snor", "Snora", "Sven", "Thar", "Thor", "Thora", "Thron", "Thrun", "Thura", "Un", "Ulla", "Utha", "Vala", "Var", "Vara", "Zak", "Zaka", "Zakan", "Zam", "Zama", "Zara"]
   }
 
-  const nombreRaza = {
+  const nombreRaza_objeto = {
 
     humano: ["Abelhard", "Abelhelm", "Admund", "Adred", "Adric", "Agis", "Alaric", "Alberic", "Albrecht", "Aldebrand", "Aldred", "Aldric", "Alfreid", "Altmar", "Alric", "Andre", "Andred", "Andric", "Anshelm", "Anton", "Arne", "Arnulf", "Axel", "Axelbrand", "Baldred", "Baldric", "Balthasar", "Barnabas", "Bart", "Bartolf", "Bartomar", "Bernolt", "Bertolf", "Boris", "Bruno", "Burgolf", "Calvin", "Casimir", "Caspar", "Cedred", "Conrad", "Corvin", "Dagmar", "Dankmar", "Dankred", "Diebold", "Diel", "Dietfried", "Dietmar", "Dietmund", "Dietrich", "Dirk", "Donat", "Eber", "Eckel", "Eckhart", "Edgar", "Emil", "Engel", "Engelbert", "Eustasius", "Ewald", "Faber", "Faustus", "Felix", "Ferdinand", "Gerber", "Gerhart", "Gerlach", "Gernar", "Gerolf", "Gilbrecht", "Gisbert", "Giselbrecht", "Gismar", "Goran", "Gosbert", "Goswin", "Gotfried", "Gothard", "Gottolf", "Gotwin", "Gregor", "Greimold", "Grimwold", "Griswold", "Guido", "Gundolf", "Gundred", "Gunnar", "Gunter", "Gustaf", "Hadred", "Hadwin", "Hagar", "Hagen", "Haldred", "Halman", "Hamlyn", "Hans", "Harbrand", "Harman", "Hartmann", "Haug", "Heidric", "Heimar", "Heinfried", "Heinman", "Heinrich", "Helmur", "Henlyn", "Hermann", "Herwin", "Hildebart", "Hildebrand", "Hildemar", "Hildemund", "Hildred", "Hildric", "Horst", "Hugo", "Igor", "Ingwald", "Ingwald", "Jander", "Jekil", "Jodokus", "Johann", "Jonas", "Jorg", "Jorn", "Josef", "Jost", "Jurgen", "Jurgen", "Karl", "Kaspar", "Klaus", "Kleber", "Konrad", "Konradin", "Kurt", "Lamprecht", "Lanfried", "Lanric", "Lanwin", "Leo", "Levin", "Liebert", "Liebrecht", "Liebwin", "Lienhart", "Linus", "Lodwig", "Lothar", "Lucius", "Ludwig", "Luitpold", "Lukas", "Lupold", "Lupus", "Luther", "Lutolf", "Leopold", "Madred", "Magnus", "Mandred", "Manfred", "Mathias", "Max",
       "Maximillian", "Meiner", "Meinhart", "Meinolf", "Mekel", "Merkel", "Nat", "Nathandar", "Nicodemus", "Odamar", "Odric", "Odwin", "Olbrecht", "Oldred", "Oldric", "Ortlieb", "Ortolf", "Orwin", "Oswald", "Osric", "Oswin", "Otfried", "Otto", "Otwin", "Paulus", "Prospero", "Ragen", "Ralf", "Rambrecht", "Randulf", "Ranulf", "Ranald", "Reikhard", "Rein", "Reiner", "Reinhard", "Reinolt", "Reuban", "Rigo", "Roderic", "Rolf", "Rudel", "Rudgar", "Rudolf", "Rudolf", "Rufus", "Ruprecht", "Ruprecht", "Sebastian", "Semund", "Sepp", "Sieger", "Siegfried", "Siegfried", "Siegmund", "Siegfried", "Siegmund", "Sigismund", "Sigric", "Sigric", "Sigismund", "Sigric", "Steffan", "Tankred", "Tankred", "Tilmann", "Tilmann", "Tomas", "Theodoric", "Theodoric", "Valdred", "Valdric", "Valdred", "Valdric", "Varl", "Viggo", "Viktor", "Werner", "Wolkhard", "Wolkhard", "Wolfram", "Wolfhart", "Wolfram", "Wolfram", "Wolfgang", "Wolfgang", "Wolfgang", "Wulf", "Xavier", "Xavier", "Xavier", "Xavier"],
@@ -99,9 +105,10 @@ const App = () => {
     enano: ["Bin", "Bor", "Dil", "Din", "Dok", "Dor", "Drin", "Fin", "Gan", "Gar", "Gil", "Gin", "Gni", "Grom", "Grond", "Grund", "Grunt", "Gul", "Gund", "Gun", "Ki", "Kin", "Krag", "Kri", "Krin", "Li", "Lin", "Lik", "Lok", "Lun", "Min", "Mir", "Nin", "Nir", "Rag", "Rik", "Rin", "Rin", "Rik", "Rik", "Rin", "Rin", "Rin", "Rin", "Rin", "Rin", "Ri", "Rig", "Run", "Rok", "Ror", "Skin", "Tin", "Tok", "Trek", "Trok", "Zin", "Zor"]
   }
 
-  const talentosAleatorios = ["Ambidiestro", "Cortés", "Genio aritmético", "Guerrero nato", "Imperturbable", "Imitador", "Intelectual", "Muy fuerte", "Muy resistente", "Oído aguzado", "Pies ligeros", "Puntería", "Recio", "Reflejos rápidos", "Resistencia a enfermedades", "Resistencia a la magia", "Resistencia a venenos", "Robusto", "Sangre fría", "Sexto sentido", "Suerte", "Vista excelente"]
+  const talentosAleatorios_array = ["Ambidiestro", "Cortés", "Genio aritmético", "Guerrero nato", "Imperturbable", "Imitador", "Intelectual", "Muy fuerte", "Muy resistente", "Oído aguzado", "Pies ligeros", "Puntería", "Recio", "Reflejos rápidos", "Resistencia a enfermedades", "Resistencia a la magia", "Resistencia a venenos", "Robusto", "Sangre fría", "Sexto sentido", "Suerte", "Vista excelente"]
 
-  const habilidadesRaza = {
+  const habilidadesRaza_objeto = {
+
     humano: ["Cotilleo", "Hablar idioma(Reikspiel)", "Sabiduría popular (el Imperio)"],
 
     elfo: ["Hablar idioma (Eltharin)", "Hablar idioma (Reikspiel)", "Sabiduría popular (Elfos)"],
@@ -112,7 +119,8 @@ const App = () => {
   }
 
 
-  const talentosRaza = {
+  const talentosRaza_objeto = {
+
     humano: [TalentoAleatorio(), TalentoAleatorio()],
 
     elfo: ["Afinidad con el Aethyr o Especialista en armas (arco largo)", "Sangre fría o Intelectual", "Visión nocturna", "Vista exelente"],
@@ -124,71 +132,84 @@ const App = () => {
 
 
   function TalentoAleatorio() {
-    const talento = talentosAleatorios[Math.floor(Math.random() * talentosAleatorios.length)]
+
+    const talento = talentosAleatorios_array[Math.floor(Math.random() * talentosAleatorios_array.length)]
     return talento;
   }
 
   function DosDeDiez() {
+
     const num1 = (Math.floor(Math.random() * 10) + 1) + (Math.floor(Math.random() * 10) + 1);
     return num1;
   };
 
   function NombreElfo() {
-    const parte1 = elementosElfo.elfo1[[Math.floor(Math.random() * elementosElfo.elfo1.length)]]
-    const parte2 = elementosElfo.elfo2[[Math.floor(Math.random() * elementosElfo.elfo2.length)]]
-    const parte3 = elementosElfo.elfo3[[Math.floor(Math.random() * elementosElfo.elfo3.length)]]
+
+    const parte1 = elementosElfo__objeto.elfo1[[Math.floor(Math.random() * elementosElfo__objeto.elfo1.length)]]
+
+    const parte2 = elementosElfo__objeto.elfo2[[Math.floor(Math.random() * elementosElfo__objeto.elfo2.length)]]
+
+    const parte3 = elementosElfo__objeto.elfo3[[Math.floor(Math.random() * elementosElfo__objeto.elfo3.length)]]
+
     const nombreElfo = parte1 + parte2 + parte3
     return [nombreElfo]
   }
 
   function NombreHalfling() {
-    const parte1 = elementosHalfling.halfling1[[Math.floor(Math.random() * elementosHalfling.halfling1.length)]]
-    const parte2 = elementosHalfling.halfling2[[Math.floor(Math.random() * elementosHalfling.halfling2.length)]]
+
+    const parte1 = elementosHalfling_objeto.halfling1[[Math.floor(Math.random() * elementosHalfling_objeto.halfling1.length)]]
+
+    const parte2 = elementosHalfling_objeto.halfling2[[Math.floor(Math.random() * elementosHalfling_objeto.halfling2.length)]]
+
     const nombreHalfling = parte1 + parte2
     return [nombreHalfling]
   }
 
   // Define las profesiones para cada raza
-  const profesionesRaza = {
+  const profesionesRaza_objeto = {
 
-    humano: ["Alborotador", "Aprendiz de hechicero", "Alguacil", "Barbero cirujano", "Batelero", "Guardaespaldas", "Osamentero", "Cazarrecompensas", "Burgués", "Miembro de séquito", "Carbonero", "Cochero", "Artista", "Espadachín estaliano", "Barquero", "Pescador", "Ladrón de tumbas", "Hechicero vulgar", "Cazador", "Iniciado", "Carcelero", "Kossar kislevita", "Guardia marina", "Mercenario", "Mensajero", "Miliciano", "Minero", "Noble", "Bersérker nórdico", "Forajido", "Escolta", "Campesino", "Gladiador", "Sicario", "Cazarratas", "Patrulla de caminos", "Bribón", "Escriba", "Marinero", "Sirviente", "Contrabandista", "Soldado", "Escudero", "Estudiante", "Ladrón", "Matón", "Peajero", "Saqueador de tumbas", "Menestral", "Vagabundo", "Ayuda de cámara", "Vigilante", "Leñador", "Fanático"],
+    humano: ["Alborotador", "AprendizDeHechicero", "Alguacil", "BarberoCirujano", "Batelero", "Guardaespaldas", "Osamentero", "Cazarrecompensas", "Burgues", "MiembroDeSequito", "Carbonero", "Cochero", "Artista", "EspadachinEstaliano", "Barquero", "Pescador", "LadronDeTumbas", "HechiceroVulgar", "Cazador", "Iniciado", "Carcelero", "KossarKislevita", "GuardiaMarina", "Mercenario", "Mensajero", "Miliciano", "Minero", "Noble", "BerserkerNordico", "Forajido", "Escolta", "Campesino", "Gladiador", "Sicario", "Cazarratas", "PatrullaDeCaminos", "Bribon", "Escriba", "Marinero", "Sirviente", "Contrabandista", "Soldado", "Escudero", "Estudiante", "Ladron", "Maton", "Peajero", "SaqueadorDeTumbas", "Menestral", "Vagabundo", "AyudaDeCamara", "Vigilante", "Leñador", "Fanatico"],
 
-    enano: ["Alborotador", "Guardaespaldas", "Burgués", "Cochero", "Artista", "Cazador", "Carcelero", "Guardia marina", "Mercenario", "Miliciano", "Minero", "Noble", "Forajido", "Gladiador", "Sicario", "Cazarratas", "Portador de runas", "Escriba", "Marinero", "Sirviente", "Rompescudos", "Contrabandista", "Soldado", "Estudiante", "Ladrón", "Peajero", "Saqueador de tumbas", "Menestral", "Matatrolls", "Vigilante"],
+    enano: ["Alborotador", "Guardaespaldas", "Burgues", "Cochero", "Artista", "Cazador", "Carcelero", "GuardiaMarina", "Mercenario", "Miliciano", "Minero", "Noble", "Forajido", "Gladiador", "Sicario", "Cazarratas", "PortadorDeRunas", "Escriba", "Marinero", "Sirviente", "Rompescudos", "Contrabandista", "Soldado", "Estudiante", "Ladron", "Peajero", "SaqueadorDeTumbas", "Menestral", "Matatrolls", "Vigilante"],
 
-    halfling: ["Alborotador", "Barbero cirujano", "Osamentero", "Cazarrecompensas", "Burgués", "Miembro de séquito", "Carbonero", "Artista", "Barquero", "Patrulla fronteriza", "Pescador", "Ladrón de tumbas", "Cazador", "Mercenario", "Mensajero", "Miliciano", "Forajido", "Campesino", "Cazarratas", "Bribón", "Sirviente", "Contrabandista", "Soldado", "Estudiante", "Ladrón", "Peajero", "Saqueador de tumbas", "Menestral", "Vagabundo", "Ayuda de cámara", "Vigilante"],
+    halfling: ["Alborotador", "BarberoCirujano", "Osamentero", "Cazarrecompensas", "Burgues", "MiembroDeSequito", "Carbonero", "Artista", "Barquero", "PatrullaFronteriza", "Pescador", "LadronDeTumbas", "Cazador", "Mercenario", "Mensajero", "Miliciano", "Forajido", "Campesino", "Cazarratas", "Bribon", "Sirviente", "Contrabandista", "Soldado", "Estudiante", "Ladron", "Peajero", "SaqueadorDeTumbas", "Menestral", "Vagabundo", "AyudaDeCamara", "Vigilante"],
 
-    elfo: ["Aprendiz de hechicero", "Artista", "Embajador", "Cazador", "Guerrero de camarilla", "Mercenario", "Mensajero", "Forajido", "Escolta", "Bribón", "Escriba", "Marinero", "Estudiante", "Ladrón", "Menestral", "Vagabundo"],
+    elfo: ["AprendizDeHechicero", "Artista", "Embajador", "Cazador", "GuerreroDeCamarilla", "Mercenario", "Mensajero", "Forajido", "Escolta", "Bribon", "Escriba", "Marinero", "Estudiante", "Ladron", "Menestral", "Vagabundo"],
   };
 
-  const profesiones = {
-    alborotador: {
-      HA: "5",
-      HP: "5",
-      F: "---",
-      R: "5",
-      Ag: "5",
-      Int: "10",
+  const profesiones_objeto = {
+
+    Alborotador: {
+      Nombre: "Alborotador",
+      HA: "+5%",
+      HP: "+5%",
+      F:  "---",
+      R:  "+5%",
+      Ag: "+5%",
+      Int:"+10%",
       FV: "---",
-      Em: "10",
-      A: "---",
-      H: "2",
-      M: "---",
-      Mag: "---",
+      Em: "+10%",
+      A:  "---",
+      H:  "2",
+      M:  "---",
+      Mag:"---",
       Habilidades: "Carisma, Esconderse, Hablar idioma (Bretón o Tileano), Hablar idioma (Reikspiel), leer y escribir, Persepcion, Sabiduria academica (Historia) o Cotilleo,Sabiduría académicica (Leyes) o Sabiduría popular (el Imperio)",
       Talentos: "!A correr!, Don de gentes, Sangre fría o Pelea callejera",
       Enseres: "Armadura ligera (chaqueta de cuero), una muda de ropa de buena artesania, 2d10 octavillas para causas diversas",
       Accesos: "Burges, capitán, escriba, estudiante, fanatico, heraldo, salteador de camínos, sirviente",
       Salidas: "Bribon, charlatán, demagogo, fanatico, forajido, politico",
     },
-    alguacil: {
-      HA: "5",
-      HP: "5",
-      F: "5",
-      R: "",
-      Ag: "",
-      Int: "10",
-      FV: "5",
-      Em: "10",
+
+    Alguacil: {
+      Nombre: "Alguacil",
+      HA: "+5%",
+      HP: "+5%",
+      F: "+5%",
+      R: "---",
+      Ag: "---",
+      Int: "+10%",
+      FV: "+5%",
+      Em: "+10%",
       A: "---",
       H: "2",
       M: "---",
@@ -199,15 +220,17 @@ const App = () => {
       Accesos: "Carcelero, guardaespaldas",
       Salidas: "Contrabandista, extorsionador, miliciano, peajero, político, sicario"
     },
-    aprendizDeHechizero: {
-      HA: "",
-      HP: "",
-      F: "",
-      R: "",
-      Ag: "5",
-      Int: "10",
+
+    AprendizDeHechicero: {
+      Nombre: "Aprendiz de hechizero",
+      HA: "---",
+      HP: "---",
+      F: "---",
+      R: "---",
+      Ag: "+5%",
+      Int: "+10%",
       FV: "15",
-      Em: "5",
+      Em: "+5%",
       A: "---",
       H: "2",
       M: "---",
@@ -218,15 +241,17 @@ const App = () => {
       Accesos: "Erudito, escriba, estudiante, hechicero vulgar",
       Salidas: "Erudito, escriba, hechictro adepto"
     },
+
     Artista: {
-      HA: "5",
-      HP: "10",
-      F: "",
-      R: "",
-      Ag: "10",
-      Int: "",
-      FV: "5",
-      Em: "10",
+      Nombre: "",
+      HA: "+5%",
+      HP: "+10%",
+      F: "---",
+      R: "---",
+      Ag: "+10%",
+      Int: "---",
+      FV: "+5%",
+      Em: "+10%",
       A: "---",
       H: "2",
       M: "---",
@@ -237,15 +262,17 @@ const App = () => {
       Accesos: "Bribón, heraldo, ladrón, vagabundo",
       Salidas: "Bribón, charlatán, juglar, ladrón, vagabundo"
     },
-    ayudaDeCamara: {
-      HA: "",
-      HP: "",
-      F: "",
-      R: "",
-      Ag: "10",
-      Int: "10",
-      FV: "5",
-      Em: "10",
+
+    AyudaDeCamara: {
+      Nombre: "AyudaDeCamara",
+      HA: "---",
+      HP: "---",
+      F: "---",
+      R: "---",
+      Ag: "+10%",
+      Int: "+10%",
+      FV: "+5%",
+      Em: "+10%",
       A: "---",
       H: "2",
       M: "---",
@@ -256,15 +283,17 @@ const App = () => {
       Accesos: "Burgués, sirviente",
       Salidas: "Administrador, bribon, escudero, estudiante, heraldo"
     },
-    barberoCirujano: {
-      HA: "5",
-      HP: "",
-      F: "",
-      R: "",
-      Ag: "10",
-      Int: "10",
-      FV: "10",
-      Em: "5",
+
+    BarberoCirujano: {
+      Nombre: "Barbero cirujano",
+      HA: "+5%",
+      HP: "---",
+      F: "---",
+      R: "---",
+      Ag: "+10%",
+      Int: "+10%",
+      FV: "+10%",
+      Em: "+5%",
       A: "---",
       H: "2",
       M: "---",
@@ -275,15 +304,17 @@ const App = () => {
       Accesos: "Estudiante, Iniciado",
       Salidas: "Galeno, interrogador, ladrón de tumbas, menestral, vagabundo"
     },
-    barquero: {
-      HA: "5",
-      HP: "5",
-      F: "10",
-      R: "5",
-      Ag: "5",
-      Int: "5",
-      FV: "",
-      Em: "",
+
+    Barquero: {
+      Nombre: "Barquero",
+      HA: "+5%",
+      HP: "+5%",
+      F: "+10%",
+      R: "+5%",
+      Ag: "+5%",
+      Int: "+5%",
+      FV: "---",
+      Em: "---",
       A: "---",
       H: "2",
       M: "---",
@@ -292,17 +323,19 @@ const App = () => {
       Talentos: "Especialista en armas (Pólvora) o Pelea callejera, Punteria o Cortés",
       Enseres: "Ballesta con 10 virotes o trabuco con suficiente pólvora y munición para 10 disparos, armadura ligera (chaqueta de cuero)",
       Accesos: "Cochero, contrabandista, peajero",
-      Salidas: "Batelero, contrabandista, marinero, patrulla decaminos, salteador de caminos"
+      Salidas: "Batelero, contrabandista, marinero, patrulla de caminos, salteador de caminos"
     },
-    batelero: {
-      HA: "10",
-      HP: "5",
-      F: "5",
-      R: "5",
-      Ag: "10",
-      Int: "5",
-      FV: "",
-      Em: "",
+
+    Batelero: {
+      Nombre: "Batelero",
+      HA: "+10%",
+      HP: "+5%",
+      F: "+5%",
+      R: "+5%",
+      Ag: "+10%",
+      Int: "+5%",
+      FV: "---",
+      Em: "---",
       A: "---",
       H: "2",
       M: "---",
@@ -313,15 +346,17 @@ const App = () => {
       Accesos: "Barquero, contrabandista",
       Salidas: "Contrabandista, guardia marina, marinero, navegante, pescador"
     },
-    berserkerNordico: {
-      HA: "5",
-      HP: "",
-      F: "10",
-      R: "10",
-      Ag: "",
-      Int: "",
-      FV: "10",
-      Em: "",
+
+    BerserkerNordico: {
+      Nombre: "Berserker nordico",
+      HA: "+5%",
+      HP: "---",
+      F: "+10%",
+      R: "+10%",
+      Ag: "---",
+      Int: "---",
+      FV: "+10%",
+      Em: "---",
       A: "---",
       H: "2",
       M: "---",
@@ -332,15 +367,17 @@ const App = () => {
       Accesos: "Ninguno",
       Salidas: "Gladiador, marinero, mercenario, sargento, veterano"
     },
-    bribon: {
-      HA: "5",
-      HP: "5",
-      F: "",
-      R: "",
-      Ag: "10",
-      Int: "5",
-      FV: "5",
-      Em: "10",
+
+    Bribon: {
+      Nombre: "Bribon",
+      HA: "+5%",
+      HP: "+5%",
+      F: "---",
+      R: "---",
+      Ag: "+10%",
+      Int: "+5%",
+      FV: "+5%",
+      Em: "+10%",
       A: "---",
       H: "2",
       M: "---",
@@ -351,15 +388,17 @@ const App = () => {
       Accesos: "Alborotador, artista, asesino,ayudante de cámara, duelista, embajador, espadachin estaliano, ladrón, marinero, noble",
       Salidas: "Artista, charlatán, demagogo, forajido, ladrón,sirviente"
     },
-    burgues: {
-      HA: "5",
-      HP: "",
-      F: "",
-      R: "",
-      Ag: "5",
-      Int: "10",
-      FV: "5",
-      Em: "5",
+
+    Burgues: {
+      Nombre: "Burgues",
+      HA: "+5%",
+      HP: "---",
+      F: "---",
+      R: "---",
+      Ag: "+5%",
+      Int: "+10%",
+      FV: "+5%",
+      Em: "+5%",
       A: "---",
       H: "2",
       M: "---",
@@ -370,15 +409,17 @@ const App = () => {
       Accesos: "Forastero, sirviente",
       Salidas: "Alborotador, ayuda de cámara, menestral, mercader, miliciano, perista, posadero"
     },
-    campesino: {
-      HA: "5",
-      HP: "5",
-      F: "5",
-      R: "10",
-      Ag: "5",
-      Int: "",
-      FV: "5",
-      Em: "",
+
+    Campesino: {
+      Nombre: "Campesino",
+      HA: "+5%",
+      HP: "+5%",
+      F: "+5%",
+      R: "+10%",
+      Ag: "+5%",
+      Int: "---",
+      FV: "+5%",
+      Em: "---",
       A: "---",
       H: "2",
       M: "---",
@@ -389,15 +430,17 @@ const App = () => {
       Accesos: "Ninguno",
       Salidas: "Carbonero, fanático, forajido, menestral, miliciano, osamentero, pescador, político, sirviente"
     },
-    carbonero: {
-      HA: "5",
-      HP: "",
-      F: "5",
-      R: "5",
-      Ag: "5",
-      Int: "5",
-      FV: "5",
-      Em: "5",
+
+    Carbonero: {
+      Nombre: "Carbonero",
+      HA: "+5%",
+      HP: "---",
+      F: "+5%",
+      R: "+5%",
+      Ag: "+5%",
+      Int: "+5%",
+      FV: "+5%",
+      Em: "+5%",
       A: "---",
       H: "2",
       M: "---",
@@ -408,15 +451,17 @@ const App = () => {
       Accesos: "Campesino, cazador, miembro de séquito, minero",
       Salidas: "Batidor, cazador, leñador, minero, vagabundo"
     },
-    carcelero: {
-      HA: "10",
-      HP: "",
-      F: "10",
-      R: "10",
-      Ag: "",
-      Int: "",
-      FV: "5",
-      Em: "",
+
+    Carcelero: {
+      Nombre: "Carcelero",
+      HA: "+10%",
+      HP: "---",
+      F: "+10%",
+      R: "+10%",
+      Ag: "---",
+      Int: "---",
+      FV: "+5%",
+      Em: "---",
       A: "---",
       H: "3",
       M: "---",
@@ -427,15 +472,17 @@ const App = () => {
       Accesos: "Cazarratas, guardaespaldas",
       Salidas: "Alguacil, cazarratas, guardaespaldas, interrogador, vigilante"
     },
-    cazador: {
-      HA: "",
+
+    Cazador: {
+      Nombre: "Cazador",
+      HA: "---",
       HP: "15",
-      F: "",
-      R: "5",
-      Ag: "10",
-      Int: "5",
-      FV: "",
-      Em: "",
+      F: "---",
+      R: "+5%",
+      Ag: "+10%",
+      Int: "+5%",
+      FV: "---",
+      Em: "---",
       A: "---",
       H: "3",
       M: "---",
@@ -446,15 +493,17 @@ const App = () => {
       Accesos: "Carbonero, guerrero de camarilla, leñador",
       Salidas: "Batidor, carbonero, cazarrecompensas, guerrero de camarilla, minero, patrulla fronteriza, soldado, tirador"
     },
-    cazarratas: {
-      HA: "5",
-      HP: "10",
-      F: "",
-      R: "5",
-      Ag: "10",
-      Int: "",
-      FV: "10",
-      Em: "",
+
+    Cazarratas: {
+      Nombre: "Cazarratas",
+      HA: "+5%",
+      HP: "+10%",
+      F: "---",
+      R: "+5%",
+      Ag: "+10%",
+      Int: "---",
+      FV: "+10%",
+      Em: "---",
       A: "---",
       H: "2",
       M: "---",
@@ -465,15 +514,17 @@ const App = () => {
       Accesos: "Carcelero, ladrón de tumbas, portador de runas, saqueador de tumbas",
       Salidas: "Carcelero, ladrón, ladrón de guante blanco, Ladrón de tumbas, osamentero, rompescudos"
     },
-    cazarrecompensas: {
-      HA: "5",
-      HP: "10",
-      F: "5",
-      R: "",
-      Ag: "10",
-      Int: "",
-      FV: "5",
-      Em: "",
+
+    Cazarrecompensas: {
+      Nombre: "Cazarrecompensas",
+      HA: "+5%",
+      HP: "+10%",
+      F: "+5%",
+      R: "---",
+      Ag: "+10%",
+      Int: "---",
+      FV: "+5%",
+      Em: "---",
       A: "---",
       H: "2",
       M: "---",
@@ -484,15 +535,17 @@ const App = () => {
       Accesos: "Cazador, gladiador, guardaespaldas,  kossar kislevita, mercenario, patrulla fronteriza",
       Salidas: "Batidor, cazavampiros, mercenario, sicario, tirador"
     },
-    cochero: {
-      HA: "",
-      HP: "",
-      F: "",
-      R: "",
-      Ag: "",
-      Int: "",
-      FV: "",
-      Em: "",
+
+    Cochero: {
+      Nombre: "Cochero",
+      HA: "+5%",
+      HP: "+10%",
+      F: "---",
+      R: "---",
+      Ag: "+10%",
+      Int: "---",
+      FV: "+5%",
+      Em: "+5%",
       A: "---",
       H: "2",
       M: "---",
@@ -503,15 +556,17 @@ const App = () => {
       Accesos: "Forajido, mensajero",
       Salidas: "Barquero, batidor, contrabandista, forajido, patrulla de caminos, peajero, salteador de caminos"
     },
-    contrabandista: {
-      HA: "5",
-      HP: "5",
-      F: "",
-      R: "",
-      Ag: "10",
-      Int: "10",
-      FV: "",
-      Em: "10",
+
+    Contrabandista: {
+      Nombre: "Contrabandista",
+      HA: "+5%",
+      HP: "+5%",
+      F: "---",
+      R: "---",
+      Ag: "+10%",
+      Int: "+10%",
+      FV: "---",
+      Em: "+10%",
       A: "---",
       H: "2",
       M: "---",
@@ -522,15 +577,17 @@ const App = () => {
       Accesos: "Alguacil, barquero, batelero, cochero, guardia marina, ingeniero, marinero, miembro de séquito, minero, osamentero, posadero,  rompescudos",
       Salidas: "Barquero, batelero, charlatán, ladrón, marinero, perista,  rompescudos"
     },
-    embajador: {
-      HA: "5",
-      HP: "5",
-      F: "",
-      R: "",
-      Ag: "5",
-      Int: "10",
-      FV: "5",
-      Em: "10",
+
+    Embajador: {
+      Nombre: "Embajador",
+      HA: "+5%",
+      HP: "+5%",
+      F: "---",
+      R: "---",
+      Ag: "+5%",
+      Int: "+10%",
+      FV: "+5%",
+      Em: "+10%",
       A: "---",
       H: "2",
       M: "---",
@@ -541,15 +598,17 @@ const App = () => {
       Accesos: "Estudiante, menestral",
       Salidas: "Bribón, charlatán, estudiante, marinero, mercader, vagabundo"
     },
-    escolta: {
-      HA: "5",
-      HP: "10",
-      F: "",
-      R: "",
-      Ag: "10",
-      Int: "10",
-      FV: "5",
-      Em: "",
+
+    Escolta: {
+      Nombre: "Escolta",
+      HA: "+5%",
+      HP: "+10%",
+      F: "---",
+      R: "---",
+      Ag: "+10%",
+      Int: "+10%",
+      FV: "+5%",
+      Em: "---",
       A: "---",
       H: "2",
       M: "---",
@@ -560,15 +619,17 @@ const App = () => {
       Accesos: "Guerrero de camarilla, mensajero, patrulla de caminos, soldado",
       Salidas: "Batidor, cochero, mercenario, parrulla de caminos, salteador de caminos"
     },
-    escriba: {
-      HA: "",
-      HP: "",
-      F: "",
-      R: "",
-      Ag: "10",
-      Int: "10",
-      FV: "10",
-      Em: "10",
+
+    Escriba: {
+      Nombre: "Escriba",
+      HA: "---",
+      HP: "---",
+      F: "---",
+      R: "---",
+      Ag: "+10%",
+      Int: "+10%",
+      FV: "+10%",
+      Em: "+10%",
       A: "---",
       H: "2",
       M: "---",
@@ -579,15 +640,17 @@ const App = () => {
       Accesos: "Aprendiz de hechizero, iniciado",
       Salidas: "Alborotador, aprendiz de hechicero, erudito, iniciado,navegante"
     },
-    escurdero: {
-      HA: "10",
-      HP: "5",
-      F: "5",
-      R: "5",
-      Ag: "5",
-      Int: "",
-      FV: "",
-      Em: "5",
+
+    Escudero: {
+      Nombre: "Escudero",
+      HA: "+10%",
+      HP: "+5%",
+      F: "+5%",
+      R: "+5%",
+      Ag: "+5%",
+      Int: "---",
+      FV: "---",
+      Em: "+5%",
       A: "+1",
       H: "2",
       M: "---",
@@ -598,15 +661,17 @@ const App = () => {
       Accesos: "Ayuda de cámara, heraldo, noble",
       Salidas: "Caballero, forajido, noble, sargento, veterano"
     },
-    espadachinEstaliano: {
+
+    EspadachinEstaliano: {
+      Nombre: "Espadachin estaliano",
       HA: "15",
-      HP: "",
-      F: "5",
-      R: "5",
-      Ag: "10",
-      Int: "5",
-      FV: "",
-      Em: "",
+      HP: "---",
+      F: "+5%",
+      R: "+5%",
+      Ag: "+10%",
+      Int: "+5%",
+      FV: "---",
+      Em: "---",
       A: "+1",
       H: "2",
       M: "---",
@@ -617,15 +682,17 @@ const App = () => {
       Accesos: "Ninguno",
       Salidas: "Bribón, duelista, guardaespaldas, salteador de caminos, sicario"
     },
-    estudiante: {
-      HA: "",
-      HP: "",
-      F: "",
-      R: "",
-      Ag: "10",
-      Int: "10",
-      FV: "5",
-      Em: "10",
+
+    Estudiante: {
+      Nombre: "Estudiante",
+      HA: "---",
+      HP: "---",
+      F: "---",
+      R: "---",
+      Ag: "+10%",
+      Int: "+10%",
+      FV: "+5%",
+      Em: "+10%",
       A: "---",
       H: "2",
       M: "---",
@@ -636,15 +703,17 @@ const App = () => {
       Accesos: "Ayuda de cámara, embajador, juglar, ladrón de tumbas,noble",
       Salidas: "Alborotador, aprendiz de hechicero, barbero cirujano, embajador, erudito, galeno, ingeniero, iniciado"
     },
-    fanatico: {
-      HA: "",
-      HP: "",
-      F: "",
-      R: "",
-      Ag: "",
-      Int: "",
-      FV: "",
-      Em: "",
+
+    Fanatico: {
+      Nombre: "Fanatico",
+      HA: "+10%",
+      HP: "---",
+      F: "+5%",
+      R: "+10%",
+      Ag: "---",
+      Int: "---",
+      FV: "+10%",
+      Em: "+5%",
       A: "---",
       H: "2",
       M: "---",
@@ -655,15 +724,17 @@ const App = () => {
       Accesos: "Alborotador, campeón judicial, campesino, iniciado, menestral",
       Salidas: "Alborotador, flagelante, forajido, fraile, iniciado"
     },
-    forajido: {
-      HA: "10",
-      HP: "10",
-      F: "",
-      R: "",
-      Ag: "10",
-      Int: "5",
-      FV: "",
-      Em: "",
+
+    Forajido: {
+      Nombre: "Forajido",
+      HA: "+10%",
+      HP: "+10%",
+      F: "---",
+      R: "---",
+      Ag: "+10%",
+      Int: "+5%",
+      FV: "---",
+      Em: "---",
       A: "+1",
       H: "2",
       M: "---",
@@ -674,15 +745,17 @@ const App = () => {
       Accesos: "Alborotador, bribón, campesino, charlatán, cochero, escudero, fanático, guardia marina, hechizero vulgar, leñador, mercenario, miliciano, patrulla de caminos, peajero, posadero",
       Salidas: "Demagogo, ladrón, salteador de caminos, vagabundo, veterano"
     },
-    gladiador: {
+
+    Gladiador: {
+      Nombre: "Gladiador",
       HA: "15",
-      HP: "",
-      F: "",
-      R: "10",
-      Ag: "10",
-      Int: "",
-      FV: "10",
-      Em: "",
+      HP: "---",
+      F: "---",
+      R: "+10%",
+      Ag: "+10%",
+      Int: "---",
+      FV: "+10%",
+      Em: "---",
       A: "---",
       H: "2",
       M: "---",
@@ -693,15 +766,17 @@ const App = () => {
       Accesos: "Bersérker nórdico, matón, rompescudos, sicario",
       Salidas: "Cazarrccompensas,  matatrolls, mercenario, sicario, veterano"
     },
-    guerreroDeCamarilla: {
-      HA: "",
-      HP: "",
-      F: "",
-      R: "",
-      Ag: "",
-      Int: "",
-      FV: "",
-      Em: "",
+
+    GuerreroDeCamarilla: {
+      Nombre: "Guerrero de camarilla",
+      HA: "+5%",
+      HP: "+5%",
+      F: "---",
+      R: "---",
+      Ag: "+10%",
+      Int: "+10%",
+      FV: "+5%",
+      Em: "---",
       A: "---",
       H: "2",
       M: "---",
@@ -712,15 +787,17 @@ const App = () => {
       Accesos: "Cazador, mensajero",
       Salidas: "Batidor, cazador, escolta, vagabundo, Veterano"
     },
-    guardaespaldas: {
-      HA: "10",
-      HP: "",
-      F: "5",
-      R: "5",
-      Ag: "5",
-      Int: "",
-      FV: "",
-      Em: "",
+
+    Guardaespaldas: {
+      Nombre: "Guardaespaldas",
+      HA: "+10%",
+      HP: "---",
+      F: "+5%",
+      R: "+5%",
+      Ag: "+5%",
+      Int: "---",
+      FV: "---",
+      Em: "---",
       A: "+1",
       H: "3",
       M: "---",
@@ -731,15 +808,17 @@ const App = () => {
       Accesos: "Carcelero, espadachin estaliano, matón, mercenario",
       Salidas: "Alguacil, carcelero, cazarrecompensas, extorsionador, interrogador, mercenario, sicario"
     },
-    guardiaMarina: {
-      HA: "10",
-      HP: "10",
-      F: "10",
-      R: "",
-      Ag: "5",
-      Int: "",
-      FV: "5",
-      Em: "",
+
+    GuardiaMarina: {
+      Nombre: "Guardia marina",
+      HA: "+10%",
+      HP: "+10%",
+      F: "+10%",
+      R: "---",
+      Ag: "+5%",
+      Int: "---",
+      FV: "+5%",
+      Em: "---",
       A: "+1",
       H: "3",
       M: "---",
@@ -750,15 +829,17 @@ const App = () => {
       Accesos: "Batelero, marinero, pescador",
       Salidas: "Contrabandista, forajido, matón, sargento,segundo de a bordo"
     },
-    hechizeroVulgar: {
-      HA: "",
-      HP: "",
-      F: "",
-      R: "5",
-      Ag: "5",
-      Int: "5",
-      FV: "10",
-      Em: "10",
+
+    HechiceroVulgar: {
+      Nombre: "Hechicero vulgar",
+      HA: "---",
+      HP: "---",
+      F: "---",
+      R: "+5%",
+      Ag: "+5%",
+      Int: "+5%",
+      FV: "+10%",
+      Em: "+10%",
       A: "---",
       H: "2",
       M: "---",
@@ -769,15 +850,17 @@ const App = () => {
       Accesos: "Ninguno",
       Salidas: "Aprendiz de hechicero, charlatán, forajido, iniciado, vagabundo"
     },
-    iniciado: {
-      HA: "5",
-      HP: "5",
-      F: "",
-      R: "5",
-      Ag: "",
-      Int: "10",
-      FV: "10",
-      Em: "10",
+
+    Iniciado: {
+      Nombre: "Iniciado",
+      HA: "+5%",
+      HP: "+5%",
+      F: "---",
+      R: "+5%",
+      Ag: "---",
+      Int: "+10%",
+      FV: "+10%",
+      Em: "+10%",
       A: "---",
       H: "2",
       M: "---",
@@ -788,15 +871,17 @@ const App = () => {
       Accesos: "Caballero, cazador de brujas, cazavampiros, escriba, estudiante, fantico, hechicero vulgar",
       Salidas: "Barbero cirujano, demagogo, escriba, fanático, fraile, sacerdote"
     },
-    kossarKislevita: {
-      HA: "10",
-      HP: "10",
-      F: "",
-      R: "10",
-      Ag: "",
-      Int: "",
-      FV: "10",
-      Em: "",
+
+    KossarKislevita: {
+      Nombre: "Kossar kislevita",
+      HA: "+10%",
+      HP: "+10%",
+      F: "---",
+      R: "+10%",
+      Ag: "---",
+      Int: "---",
+      FV: "+10%",
+      Em: "---",
       A: "---",
       H: "2",
       M: "---",
@@ -807,15 +892,17 @@ const App = () => {
       Accesos: "Ninguno",
       Salidas: "Cazarreconpensas, mercenario, rompescudos, sargento, veterano"
     },
-    ladron: {
-      HA: "5",
-      HP: "5",
-      F: "",
-      R: "",
+
+    Ladron: {
+      Nombre: "Ladron",
+      HA: "+5%",
+      HP: "+5%",
+      F: "---",
+      R: "---",
       Ag: "15",
-      Int: "5",
-      FV: "",
-      Em: "10",
+      Int: "+5%",
+      FV: "---",
+      Em: "+10%",
       A: "---",
       H: "2",
       M: "---",
@@ -826,15 +913,17 @@ const App = () => {
       Accesos: "Artista, bribón, cazarratas, contrabandista, forajido, interrogador, ladron de tumbas, miliciano, peajero, saqueador de tumbas, sicario, sirviente, vagabundo",
       Salidas: "Artista, bribón, charlatán, ladrón de guante blanco, perista, saqueador de tumbas"
     },
-    ladronDeTumbas: {
-      HA: "5",
-      HP: "5",
-      F: "5",
-      R: "",
-      Ag: "10",
-      Int: "",
-      FV: "10",
-      Em: "",
+
+    LadronDeTumbas: {
+      Nombre: "Ladron de tumbas",
+      HA: "+5%",
+      HP: "+5%",
+      F: "+5%",
+      R: "---",
+      Ag: "+10%",
+      Int: "---",
+      FV: "+10%",
+      Em: "---",
       A: "---",
       H: "2",
       M: "---",
@@ -845,15 +934,17 @@ const App = () => {
       Accesos: "Barbero cirujano, cazarratas, osamentero",
       Salidas: "Cazarratas, estudiante, ladrón, ladrón de guante blanco, perista"
     },
-    leñador: {
-      HA: "10",
-      HP: "",
-      F: "10",
-      R: "",
-      Ag: "5",
-      Int: "",
-      FV: "10",
-      Em: "",
+
+    Leñador: {
+      Nombre: "Leñador",
+      HA: "+10%",
+      HP: "---",
+      F: "+10%",
+      R: "---",
+      Ag: "+5%",
+      Int: "---",
+      FV: "+10%",
+      Em: "---",
       A: "---",
       H: "3",
       M: "---",
@@ -864,15 +955,17 @@ const App = () => {
       Accesos: "Carbonero, vagabundo",
       Salidas: "Batidor, cazador, forajido, miliciano, vagabundo"
     },
-    marinero: {
-      HA: "10",
-      HP: "5",
-      F: "10",
-      R: "",
-      Ag: "10",
-      Int: "",
-      FV: "",
-      Em: "",
+
+    Marinero: {
+      Nombre: "Marinero",
+      HA: "+10%",
+      HP: "+5%",
+      F: "+10%",
+      R: "---",
+      Ag: "+10%",
+      Int: "---",
+      FV: "---",
+      Em: "---",
       A: "+1",
       H: "2",
       M: "---",
@@ -883,15 +976,17 @@ const App = () => {
       Accesos: "Barquero, batelero, berserker nórdico, contrabandista, embajador, pescador",
       Salidas: "Bribon, contrabardista, guardia marina, navegante, segundo de a bordo"
     },
-    matatrolls: {
-      HA: "10",
-      HP: "",
-      F: "5",
-      R: "5",
-      Ag: "5",
-      Int: "",
-      FV: "10",
-      Em: "",
+
+    Matatrolls: {
+      Nombre: "Matatrolls",
+      HA: "+10%",
+      HP: "---",
+      F: "+5%",
+      R: "+5%",
+      Ag: "+5%",
+      Int: "---",
+      FV: "+10%",
+      Em: "---",
       A: "+1",
       H: "3",
       M: "---",
@@ -902,15 +997,17 @@ const App = () => {
       Accesos: "Gladiador",
       Salidas: "Matagigantes"
     },
-    maton: {
-      HA: "10",
-      HP: "",
-      F: "5",
-      R: "5",
-      Ag: "",
-      Int: "",
-      FV: "5",
-      Em: "5",
+
+    Maton: {
+      Nombre: "Maton",
+      HA: "+10%",
+      HP: "---",
+      F: "+5%",
+      R: "+5%",
+      Ag: "---",
+      Int: "---",
+      FV: "+5%",
+      Em: "+5%",
       A: "+1",
       H: "2",
       M: "---",
@@ -921,15 +1018,17 @@ const App = () => {
       Accesos: "Guardia marina, sicario",
       Salidas: "Extorsionador, gladiador, guardaespaldas,  interrogador, mercenario"
     },
-    menestral: {
-      HA: "",
-      HP: "",
-      F: "5",
-      R: "5",
-      Ag: "10",
-      Int: "5",
-      FV: "10",
-      Em: "",
+
+    Menestral: {
+      Nombre: "Menestral",
+      HA: "---",
+      HP: "---",
+      F: "+5%",
+      R: "+5%",
+      Ag: "+10%",
+      Int: "+5%",
+      FV: "+10%",
+      Em: "---",
       A: "---",
       H: "2",
       M: "---",
@@ -940,15 +1039,17 @@ const App = () => {
       Accesos: "Barbero cirujano, burgués, campesino, miembro de séquito, vigilante",
       Salidas: "Artesano, embajador, fanático, ingeniero, mercader, miliciano"
     },
-    mensajero: {
-      HA: "",
-      HP: "",
-      F: "5",
-      R: "5",
-      Ag: "10",
-      Int: "5",
-      FV: "10",
-      Em: "",
+
+    Mensajero: {
+      Nombre: "Mensajero",
+      HA: "---",
+      HP: "---",
+      F: "+5%",
+      R: "+5%",
+      Ag: "+10%",
+      Int: "+5%",
+      FV: "+10%",
+      Em: "---",
       A: "---",
       H: "2",
       M: "---",
@@ -959,15 +1060,17 @@ const App = () => {
       Accesos: "Miliciano, patrulla de caminos, sirviente",
       Salidas: "Batidor, cochero, escolta, guerrero de camarilla, heraldo, patrulla de caminos, soldado"
     },
-    mercenario: {
-      HA: "10",
-      HP: "10",
-      F: "5",
-      R: "5",
-      Ag: "5",
-      Int: "",
-      FV: "5",
-      Em: "",
+
+    Mercenario: {
+      Nombre: "Mercenario",
+      HA: "+10%",
+      HP: "+10%",
+      F: "+5%",
+      R: "+5%",
+      Ag: "+5%",
+      Int: "---",
+      FV: "+5%",
+      Em: "---",
       A: "+1",
       H: "2",
       M: "---",
@@ -978,15 +1081,17 @@ const App = () => {
       Accesos: "Bersérker nórdico, cazarrecompensas, demagogo, escolta, gladiador, guardaespaldas, kossar kislevita, matón, miliciano, minero, patrulla fronteriza, soldado, vigilante",
       Salidas: "cazarrecompensas, forajido, guardaespaldas, rompescudos, sargento, veterano"
     },
-    miembroDeSequito: {
-      HA: "",
-      HP: "",
-      F: "",
-      R: "5",
-      Ag: "10",
-      Int: "5",
-      FV: "5",
-      Em: "10",
+
+    MiembroDeSequito: {
+      Nombre: "Miembro de sequito",
+      HA: "---",
+      HP: "---",
+      F: "---",
+      R: "+5%",
+      Ag: "+10%",
+      Int: "+5%",
+      FV: "+5%",
+      Em: "+10%",
       A: "---",
       H: "2",
       M: "---",
@@ -997,15 +1102,17 @@ const App = () => {
       Accesos: "Osarnentero,sirviente",
       Salidas: "Carbonero,contrabandista, charlatán, espía, menestral, sirviente, vagabundo"
     },
-    miliciano: {
-      HA: "10",
-      HP: "5",
-      F: "5",
-      R: "5",
-      Ag: "10",
-      Int: "",
-      FV: "",
-      Em: "",
+
+    Miliciano: {
+      Nombre: "Miliciano",
+      HA: "+10%",
+      HP: "+5%",
+      F: "+5%",
+      R: "+5%",
+      Ag: "+10%",
+      Int: "---",
+      FV: "---",
+      Em: "---",
       A: "---",
       H: "2",
       M: "---",
@@ -1016,15 +1123,17 @@ const App = () => {
       Accesos: "Alguacil, artesano, burgués, campesino, leñador, menestral, mercader, pescador",
       Salidas: "Artesano, forajido, ladrón, mensajero, mercenario, patrulla fronteriza, sargento"
     },
-    minero: {
-      HA: "5",
-      HP: "5",
-      F: "10",
-      R: "5",
-      Ag: "",
-      Int: "5",
-      FV: "5",
-      Em: "",
+
+    Minero: {
+      Nombre: "Minero",
+      HA: "+5%",
+      HP: "+5%",
+      F: "+10%",
+      R: "+5%",
+      Ag: "---",
+      Int: "+5%",
+      FV: "+5%",
+      Em: "---",
       A: "---",
       H: "2",
       M: "---",
@@ -1035,15 +1144,17 @@ const App = () => {
       Accesos: "Carbonero, cazador",
       Salidas: "Batidor, carbonero, contrabandista, ingeniero, mercenario, rompescudos"
     },
-    noble: {
-      HA: "10",
-      HP: "5",
-      F: "",
-      R: "",
-      Ag: "5",
-      Int: "5",
-      FV: "5",
-      Em: "10",
+
+    Noble: {
+      Nombre: "Noble",
+      HA: "+10%",
+      HP: "+5%",
+      F: "---",
+      R: "---",
+      Ag: "+5%",
+      Int: "+5%",
+      FV: "+5%",
+      Em: "+10%",
       A: "---",
       H: "2",
       M: "---",
@@ -1054,15 +1165,17 @@ const App = () => {
       Accesos: "Administrador, escudero",
       Salidas: "Bribón, cortesano, escudero, estudiante, herreruelo, político"
     },
-    osamentero: {
-      HA: "5",
-      HP: "",
-      F: "5",
-      R: "10",
-      Ag: "5",
-      Int: "",
-      FV: "5",
-      Em: "5",
+
+    Osamentero: {
+      Nombre: "Osamentero",
+      HA: "+5%",
+      HP: "---",
+      F: "+5%",
+      R: "+10%",
+      Ag: "+5%",
+      Int: "---",
+      FV: "+5%",
+      Em: "+5%",
       A: "---",
       H: "2",
       M: "---",
@@ -1073,15 +1186,17 @@ const App = () => {
       Accesos: "Campesino, cazarratas,vagabundo",
       Salidas: "Contrabandista, ladrón de guante blanco, ladrón de tumbas, miembro de séquito, perista"
     },
-    patrullaDeCamino: {
-      HA: "10",
-      HP: "10",
-      F: "5",
-      R: "",
-      Ag: "10",
-      Int: "5",
-      FV: "5",
-      Em: "",
+
+    PatrullaDeCaminos: {
+      Nombre: "Patrulla de camino",
+      HA: "+10%",
+      HP: "+10%",
+      F: "+5%",
+      R: "---",
+      Ag: "+10%",
+      Int: "+5%",
+      FV: "+5%",
+      Em: "---",
       A: "---",
       H: "2",
       M: "---",
@@ -1092,15 +1207,17 @@ const App = () => {
       Accesos: "Barquero, cochero, escolta, mensajero, vigilante",
       Salidas: "Batidor, escolta, forajido, mensajero, peajero, salteador de caminos, sargento"
     },
-    patrullaFronteriza: {
-      HA: "5",
-      HP: "10",
-      F: "",
-      R: "5",
-      Ag: "10",
-      Int: "",
-      FV: "10",
-      Em: "",
+
+    PatrullaFronteriza: {
+      Nombre: "PatrullaFronteriza",
+      HA: "+5%",
+      HP: "+10%",
+      F: "---",
+      R: "+5%",
+      Ag: "+10%",
+      Int: "---",
+      FV: "+10%",
+      Em: "---",
       A: "---",
       H: "2",
       M: "---",
@@ -1111,15 +1228,17 @@ const App = () => {
       Accesos: "Cazador, miliciano, peajero",
       Salidas: "Batidor, cazarrecompensas, cazavampiros, mercenario, vagabundo"
     },
-    peajero: {
-      HA: "10",
-      HP: "5",
-      F: "5",
-      R: "10",
-      Ag: "5",
-      Int: "",
-      FV: "5",
-      Em: "",
+
+    Peajero: {
+      Nombre: "Peajero",
+      HA: "+10%",
+      HP: "+5%",
+      F: "+5%",
+      R: "+10%",
+      Ag: "+5%",
+      Int: "---",
+      FV: "+5%",
+      Em: "---",
       A: "---",
       H: "2",
       M: "---",
@@ -1130,15 +1249,17 @@ const App = () => {
       Accesos: "Alguacil, cochero,patrulla de caminos",
       Salidas: "Barquero, forajido, ladrón, patrulla fronteriza, político, salteador de caminos, soldado"
     },
-    pescador: {
-      HA: "",
-      HP: "5",
-      F: "10",
-      R: "5",
-      Ag: "10",
-      Int: "5",
-      FV: "",
-      Em: "",
+
+    Pescador: {
+      Nombre: "Pescador",
+      HA: "---",
+      HP: "+5%",
+      F: "+10%",
+      R: "+5%",
+      Ag: "+10%",
+      Int: "+5%",
+      FV: "---",
+      Em: "---",
       A: "---",
       H: "2",
       M: "---",
@@ -1149,15 +1270,17 @@ const App = () => {
       Accesos: "Batelero,  campesino",
       Salidas: "Guardia marina, marinero, mercader, miliciano, navegante"
     },
-    portadorDeRunas: {
-      HA: "10",
-      HP: "",
-      F: "5",
-      R: "5",
-      Ag: "10",
-      Int: "5",
-      FV: "5",
-      Em: "",
+
+    PortadorDeRunas: {
+      Nombre: "Portador de runas",
+      HA: "+10%",
+      HP: "---",
+      F: "+5%",
+      R: "+5%",
+      Ag: "+10%",
+      Int: "+5%",
+      FV: "+5%",
+      Em: "---",
       A: "---",
       H: "2",
       M: "+1",
@@ -1168,15 +1291,17 @@ const App = () => {
       Accesos: "Rompescudos",
       Salidas: "Batidor, cazarratas,rompescudos, saqueador de tumbas, veterano"
     },
-    rompescudos: {
-      HA: "10",
-      HP: "",
-      F: "5",
-      R: "5",
-      Ag: "10",
-      Int: "",
-      FV: "5",
-      Em: "",
+
+    Rompescudos: {
+      Nombre: "Rompescudos",
+      HA: "+10%",
+      HP: "---",
+      F: "+5%",
+      R: "+5%",
+      Ag: "+10%",
+      Int: "---",
+      FV: "+5%",
+      Em: "---",
       A: "+1",
       H: "2",
       M: "---",
@@ -1187,34 +1312,38 @@ const App = () => {
       Accesos: "Cazarratas, contrabandista, kossar kislevita, mercenario, minero, portador de runas, saqueador de tumbas",
       Salidas: "Contrabandista, gladiador, portador de runas, saqueador de tumbas, sargento, veterano"
     },
-    saqueadorDeTumbas: {
-      HA: "10",
-      HP: "",
-      F: "",
-      R: "",
-      Ag: "10",
-      Int: "10",
-      FV: "10",
-      Em: "10",
+
+    SaqueadorDeTumbas: {
+      Nombre: "Saqueador de tumbas",
+      HA: "+10%",
+      HP: "---",
+      F: "---",
+      R: "---",
+      Ag: "+10%",
+      Int: "+10%",
+      FV: "+10%",
+      Em: "+10%",
       A: "---",
       H: "2",
       M: "---",
       Mag: "---",
       Habilidades: "Buscar, Escalar, esconderse o Supervivencia, Forzar cerradura o Movimiento silencioso, Hablar idioma (Oásico, Khazalid o Eltharin), Percepción, Leer/escribir, Sabiduría popular (el Imperio) o Código secreto (Ladrón), Tasar",
-      Talentos: "",
+      Talentos: "Experto en trampas o Pericia subterránea, Suerte o Sexto sentido",
       Enseres: "Armadura ligera (chaqueta de cuero), palanca, lámpara, aceite de lámpara, 10 metros de cuerda, 2 sacas",
       Accesos: "Ladrón, portador de runas, rompescudos",
       Salidas: "Cazarracas, cazavampiros , ladrón, perista , rompescudos"
     },
+
     Sicario: {
-      HA: "10",
-      HP: "",
-      F: "10",
-      R: "",
-      Ag: "10",
-      Int: "",
-      FV: "10",
-      Em: "",
+      Nombre: "Sicario",
+      HA: "+10%",
+      HP: "---",
+      F: "+10%",
+      R: "---",
+      Ag: "+10%",
+      Int: "---",
+      FV: "+10%",
+      Em: "---",
       A: "---",
       H: "2",
       M: "---",
@@ -1226,15 +1355,17 @@ const App = () => {
       Salidas: "Duelista, extorcionador, gladiador, ladrón, matón"
 
     },
-    sirviente: {
-      HA: "5",
-      HP: "",
-      F: "5",
-      R: "",
-      Ag: "10",
-      Int: "5",
-      FV: "10",
-      Em: "5",
+
+    Sirviente: {
+      Nombre: "Sirviente",
+      HA: "+5%",
+      HP: "---",
+      F: "+5%",
+      R: "---",
+      Ag: "+10%",
+      Int: "+5%",
+      FV: "+10%",
+      Em: "+5%",
       A: "+1",
       H: "2",
       M: "---",
@@ -1245,15 +1376,17 @@ const App = () => {
       Accesos: "Bribón, campesino, miembro de séquito",
       Salidas: "Alborotador, ayuda de cámara, burgués, espia, ladrón, mensajero, miembro de séquito, posadero"
     },
-    soldado: {
-      HA: "10",
-      HP: "10",
-      F: "",
-      R: "",
-      Ag: "10",
-      Int: "",
-      FV: "5",
-      Em: "",
+
+    Soldado: {
+      Nombre: "Soldado",
+      HA: "+10%",
+      HP: "+10%",
+      F: "---",
+      R: "---",
+      Ag: "+10%",
+      Int: "---",
+      FV: "+5%",
+      Em: "---",
       A: "+1",
       H: "2",
       M: "---",
@@ -1264,15 +1397,17 @@ const App = () => {
       Accesos: "cazador, flagelante, mensajero, peajero, vigilante",
       Salidas: "Escolta, mercenario, sargento, vagabundo, veterano, vigilante"
     },
-    vagabundo: {
-      HA: "5",
-      HP: "10",
-      F: "",
-      R: "",
-      Ag: "10",
-      Int: "5",
-      FV: "",
-      Em: "5",
+
+    Vagabundo: {
+      Nombre: "Vagabundo",
+      HA: "+5%",
+      HP: "+10%",
+      F: "---",
+      R: "---",
+      Ag: "+10%",
+      Int: "+5%",
+      FV: "---",
+      Em: "+5%",
       A: "---",
       H: "2",
       M: "---",
@@ -1283,15 +1418,17 @@ const App = () => {
       Accesos: "Artista, barbero cirujano, carbonero, embajador, forajido, guerrero de camarilla, hechizero vulgar, ladrón de guante blanco, leñador, miembro de séquito, patrulla fronteriza, soldado",
       Salidas: "Artista, batidor, fraile, ladrón, leñador, osamentero"
     },
-    vigilante: {
-      HA: "10",
-      HP: "5",
-      F: "5",
-      R: "",
-      Ag: "5",
-      Int: "10",
-      FV: "",
-      Em: "5",
+
+    Vigilante: {
+      Nombre: "Vigilante",
+      HA: "+10%",
+      HP: "+5%",
+      F: "+5%",
+      R: "---",
+      Ag: "+5%",
+      Int: "+10%",
+      FV: "---",
+      Em: "+5%",
       A: "---",
       H: "2",
       M: "---",
@@ -1305,21 +1442,29 @@ const App = () => {
 
   }
 
-  const heridasRaza = {
+  const heridasRaza_objeto = {
+
     humano: [10, 10, 10, 11, 11, 11, 12, 12, 12, 13],
+    
     enano: [11, 11, 11, 12, 12, 12, 13, 13, 13, 14],
+    
     halfling: [8, 8, 8, 9, 9, 9, 10, 10, 10, 11],
+    
     elfo: [9, 9, 9, 10, 10, 10, 11, 11, 11, 12],
   }
 
-  const alturaRaza = {
+  const alturaRaza_objeto = {
+
     humano: 165 + DosDeDiez(),
+    
     enano: 135 + DosDeDiez(),
+    
     halfling: 105 + DosDeDiez(),
+    
     elfo: 170 + DosDeDiez()
 
   }
-  const pesoRaza = {
+  const pesoRaza_objeto = {
 
     humano: [47, 50, 52, 54, 56, 59, 61, 63, 65, 68, 70, 72, 74, 77, 79, 81, 86, 90, 95, 100],
 
@@ -1330,7 +1475,7 @@ const App = () => {
     elfo: [36, 38, 40, 43, 45, 47, 50, 51, 56, 59, 61, 63, 65, 68, 70, 72, 74, 77, 79]
   }
 
-  const colorDePelo = {
+  const colorDePelo_objeto = {
 
     humano: ["Rubio ceniza", "Rubio oscuro", "Rubio", "Cobrizo", "Rojo", "Castaño claro", "Castaño", "Castaño", "Castaño oscuro", "Negro"],
 
@@ -1341,7 +1486,7 @@ const App = () => {
     elfo: ["Plateado", "Rubio ceniza", "Rubio oscuro", "Rubio", "Cobrizo", "Castaño claro", "Castaño claro", "Castaño", "Castaño oscuro", "Negro"]
   }
 
-  const colorDeOjos = {
+  const colorDeOjos_objeto = {
 
     humano: ["Gris claro", "Gris azulado", "Azules", "Verdes", "Cobrizos", "Marrón claro", "Marrones", "Marrónes oscuro", "Violetas", "Negros"],
 
@@ -1352,7 +1497,7 @@ const App = () => {
     elfo: ["Zarco", "Azules", "Verdes", "Cobrizos", "Marrón claro", "Marrones", "Marrón oscuro", "Plateados", "Violetas", "Negros"]
   }
 
-  const destinoRaza = {
+  const destinoRaza_objeto = {
 
     humano: [2, 2, 2, 2, 3, 3, 3, 3, 3, 3],
 
@@ -1372,32 +1517,36 @@ const App = () => {
     const razas = ['humano', 'enano', 'halfling', 'elfo'];
 
     const razaAleatoria = razas[Math.floor(Math.random() * razas.length)]
-
-    const razaStats = caracteristicasRaza[razaAleatoria]
-
-    const profesiones = profesionesRaza[razaAleatoria]
-
-    const heridas = heridasRaza[razaAleatoria]
-
-    const destino = destinoRaza[razaAleatoria]
-
-    const nombre = nombreRaza[razaAleatoria]
-
-    const apellido = apellidoRaza[razaAleatoria]
-
-    const movimiento = movimientoRaza[razaAleatoria]
-
-    const peso = pesoRaza[razaAleatoria]
-
-    const pelo = colorDePelo[razaAleatoria]
-
-    const ojos = colorDeOjos[razaAleatoria]
-
-    const habilidadesDeRaza = habilidadesRaza[razaAleatoria]
-
-    const talentosDeRaza = talentosRaza[razaAleatoria]
+    
+    const profesiones = profesionesRaza_objeto[razaAleatoria]
 
     const profesionAleatoria = profesiones[Math.floor(Math.random() * profesiones.length)];
+
+    const razaStats = caracteristicasRaza_objeto[razaAleatoria]
+
+    const profesion = profesiones_objeto[profesionAleatoria] 
+
+    console.log(profesiones,profesionAleatoria,profesion)
+
+    const heridas = heridasRaza_objeto[razaAleatoria]
+
+    const destino = destinoRaza_objeto[razaAleatoria]
+
+    const nombre = nombreRaza_objeto[razaAleatoria]
+
+    const apellido = apellidoRaza_objeto[razaAleatoria]
+
+    const movimiento = movimientoRaza_objeto[razaAleatoria]
+
+    const peso = pesoRaza_objeto[razaAleatoria]
+
+    const pelo = colorDePelo_objeto[razaAleatoria]
+
+    const ojos = colorDeOjos_objeto[razaAleatoria]
+
+    const habilidadesDeRaza = habilidadesRaza_objeto[razaAleatoria]
+
+    const talentosDeRaza = talentosRaza_objeto[razaAleatoria]
 
     const destinoAleatorio = destino[Math.floor(Math.random() * destino.length)];
 
@@ -1407,7 +1556,7 @@ const App = () => {
 
     const apellidoAleatorio = apellido[Math.floor(Math.random() * apellido.length)]
 
-    const alturaAleatoria = alturaRaza[razaAleatoria]
+    const alturaAleatoria = alturaRaza_objeto[razaAleatoria]
 
     const pesoAleatorio = peso[Math.floor(Math.random() * peso.length)]
 
@@ -1416,10 +1565,10 @@ const App = () => {
     const ojosAleatorio = ojos[Math.floor(Math.random() * ojos.length)]
 
     const personajeGenerado = {
+
       nombre: nombreAleatorio,
       apellido: apellidoAleatorio,
       raza: razaAleatoria,
-      profesion: profesionAleatoria,
       heridas: heridasAleatorias,
       destino: destinoAleatorio,
       movimiento: movimiento,
@@ -1430,6 +1579,7 @@ const App = () => {
       habilidadesDeRaza: habilidadesDeRaza,
       talentosDeRaza: talentosDeRaza,
       caracteristicas: {
+
         Caracteristica: "Stats aleatorias",
         HA: DosDeDiez(),
         HP: DosDeDiez(),
@@ -1440,8 +1590,8 @@ const App = () => {
         FV: DosDeDiez(),
         Em: DosDeDiez(),
       },
-
       caracteristicasDeRaza: {
+
         titulo: razaStats.caracRaza,
         HA: razaStats.HA,
         HP: razaStats.HP,
@@ -1451,8 +1601,28 @@ const App = () => {
         Int: razaStats.Int,
         FV: razaStats.FV,
         Em: razaStats.Em
-      }
+      },
 
+      profesion: {
+        Nombre: profesion.Nombre,
+        HA:  profesion.HA,
+        HP:  profesion.HP,
+        F:   profesion.F,
+        R:   profesion.R,
+        Ag:  profesion.Ag,
+        Int: profesion.Int,
+        FV:  profesion.FV,
+        Em:  profesion.Em,
+        A:   profesion.A,
+        H:   profesion.H,
+        M:   profesion.M,
+        Mag: profesion.Mag,
+        Habilidades: profesion.Habilidades,
+        Talentos: profesion.Talentos,
+        Enseres: profesion.Enseres,
+        Accesos: profesion.Accesos,
+        Salidas: profesion.Salidas
+      }
     };
 
     setPersonaje(personajeGenerado);
@@ -1527,7 +1697,7 @@ const App = () => {
                 </tbody>
               </table>
             </div>
-            <h2>Profesión: {personaje.profesion}</h2>
+            <h2>Profesión: {personaje.profesion.Nombre}</h2>
             <h3>Rasgos fisicos</h3>
             <p>Altura: {personaje.altura} cm</p>
             <p>Peso: {personaje.peso} kg</p>
