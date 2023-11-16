@@ -55,7 +55,7 @@ const App = () => {
   };
 
   const movimientoRaza_objeto = {
-    
+
     humano: 4,
 
     elfo: 5,
@@ -63,8 +63,7 @@ const App = () => {
     enano: 3,
 
     halfling: 4,
-  }
-
+  };
 
   const elementosElfo__objeto = {
 
@@ -73,17 +72,17 @@ const App = () => {
     elfo2: ["A", "Al", "An", "Ar", "As", "E", "El", "En", "Er", "Es", "Fan", "Fen", "Fin", "I", "Il", "In", "Ir", "Is", "O", "Ol", "On", "Or", "Os", "Ra", "Ral", "Ran", "Re", "Rel", "Ren", "Ril", "Rin", "Ro", "Rol", "Ron", "Ry", "Sa", "Sal", "San", "Se", "Sel", "Sen", "Si", "Sil", "Sin", "So", "Sol", "Son", "U", "Ul"],
 
     elfo3: ["Baen", "Baine", "Baire", "Bar", "Bhir", "Brier", "Brior", "Brin", "Daen", "Daine", "Daire", "Dar", "Dhil", "Dhir", "Drel", "Drir", "Dror", "Eorl", "Eos", "Eoth", "Fil", "Fin", "Fir", "Hil", "Hin", "Hor", "Il", "In", "Ion", "Ir", "Ith", "Is", "Laen", "Laer", "Laine", "Lan", "Las", "Len", "Les", "Lil", "Lin", "Lir", "Lis", "Lor", "Los", "Mael", "Maen", "Main", "Mal", "Mair", "Mar", "Mil", "Min", "Mir", "Nael", "Naen", "Nael", "Naer", "Nair", "Nail", "Nal", "Nan", "Nar", "Nel", "Nir", "Nir", "Nis", "Nis", "Nis", "Nil", "Nin", "Nir", "Ran", "Ran", "Rea", "Rel", "Rea", "Rel", "Ril", "Ril", "Rin", "Rin", "Ril", "Ril", "Rin", "Rin", "Rir", "Rion", "Rir", "Rior", "Riorl", "Rior", "Riorl", "Riorn", "Ryel", "Taen", "Tain", "Tair", "Thain", "Than", "Thar", "Thel", "Thil", "Thir", "Thir", "Thrin", "Thrin", "Thwe", "Til", "Tin", "Tin", "Tin", "Tis", "Thrill", "Thril", "We", "Yan"],
-  }
+  };
 
   const elementosHalfling_objeto = {
-    
+
     halfling1: ["Bag", "Balf", "Berc", "Bill", "Bobb", "Bodg", "Bog", "Bom", "Bonn", "Brog", "Bulc", "Bull", "Bust", "Cam", "Cap", "Ced", "Chund", "Clog", "Clof", "Cob", "Cog", "Crum", "Crump", "Curl", "Dod", "Dog", "Dott", "Drog", "Dron", "Durc", "Elm", "Enn", "Ermin", "Ethan", "Falc", "Fald", "Far", "Falm", "Fild", "Flac", "Fogg", "Frit", "Ful", "Func", "Gaff", "Galb", "Gamm", "Gert", "Giff", "Gild", "Gon", "Grop", "Gudd", "Gump", "Gu", "Hal", "Ham", "Hart", "Harp", "Jac", "Jas", "Jasp", "Joc", "Lac", "Lil", "Lob", "Lott", "Lud", "Lurc", "Mad", "Mag", "Man", "May", "Mer", "Mul", "Murc", "Murd", "Nag", "Nell", "Nobb", "Nob", "Od", "Og", "Old", "Pipp", "Podd", "Porc", "Riff", "Rip", "Rob", "Sam", "Supp", "Taff", "Talb", "Talc", "Tay", "Tom", "Wald", "Watt", "Will"],
 
     halfling2: ["Belly", "Er", "Fast", "In", "It", "Mutch", "O", "Odoc", "Riadoc", "Regar", "Wick", "Wise", "Wit", "Y"],
-  }
+  };
 
   const apellidoRaza_objeto = {
-    
+
     humano: ["Adelhof", "Adelhof", "Albrecht", "Altmann", "Atzwig", "Bacher", "Baer", "Baumann", "Becker", "Behn", "Betz", "Beyer", "Bischof", "Boehm", "Breitenbach", "Breuer", "Dahmbach", "Delfholt", "Drakenhof", "Drauwulf", "Durrbein", "Ehrhard", "Eisenhauer", "Eschlimann", "Falkenheim", "Fehr", "Fiegler", "Fleischer", "Frohlich", "Frueh", "Fuchs", "Gaertner", "Gaffwig", "Gebauer", "Godtgraf", "Grunenwald", "Guth", "Haintz", "Herz", "Herzog", "Hirtzel", "Hoch", "Hoefer", "Jaeger", "Jochutz", "Kalb", "Kaltenbach", "Kalb", "Konig", "Kraemer", "Krebs", "Konigsamen", "Konig", "Kuhn", "Kummel", "Lang", "Lankdorf", "Liess", "Lebengut", "Lutzen", "Machholt", "Meusmann", "Meyer", "Mohr", "Nachtmann", "Naubhof", "Netzhoch", "Neumann", "Niederlitz", "Nuhr", "Oberholtzer", "Ohrsten", "Otzlowe", "Reichert", "Reifsneider", "Riese", "Rohrig", "Reiss", "Schwalb", "Steiner", "Tabbeck", "Teuber", "Tolzen", "Trachsel", "Weber", "Wechsler", "Wirtz", "Widmann", "Widmer", "Veit", "Schaumer", "Vogt", "Vogel", "Zumwald"],
 
     elfo: ["Blackbough", "Blackcairn", "Blackwood", "Bluefeather", "Bluewing", "Boldheart", "Boldspear", "Bravehelm", "Bravestar", "Brightcrown", "Brightcrown", "Brightwand", "Coolstream", "Coolwater", "Darkeagle", "Darkmane", "Darkmoon", "Eldenkin", "Eldendrake", "Fairowl", "Fastblade", "Fastspear", "Fastwing", "Fellhand", "Fellblade", "Fleetfoot", "Fleet-though", "Fleetwing", "Gladheart", "Gladshore", "Gladwind", "Goldenbrook", "Goldencloud", "Goldenhair", "Goodroot", "Goodwood", "Greendale", "Greenfeather", "Greenglade", "Hawkhelm", "Hawkstar", "Hawkwood", "Hawkstar", "Hawkwood", "Hawkstar", "Keeneye", "Keengaze", "Keensight", "Kindheart", "Kindwater", "Lightfoot", "Lightwing", "Longleap", "Longroad", "Oldmane", "Oldtower", "Palemoon", "Palewand", "Purelight", "Puresky", "Seagleam", "Seamist", "Shadowhelm", "Shadowseer", "Shadowstar", "Sharpblade", "Shiningmoon", "Shininghelm", "Silverdawn", "Silverhair", "Silverleaf", "Sure-eye", "Surehand", "Swiftbow", "Swifthand", "Swiftwing", "Slendertree", "Slenderwand", "Soaringleaf", "Soaringsun", "Starbrow", "Starfire", "Stargaze", "Strongarrow", "Stronghand", "Strongtower", "Tallbeam", "Tallhelm", "Tallhelm", "Tallhelm", "Tallhelm", "Tenderheart", "Tendersong", "Truefriend", "Trueseer", "Wiseheart", "Wisewind", "Whitelock", "Whitereed", "Whitetor", "Youngleaf", "Youngstar", "Youngwood"],
@@ -91,7 +90,7 @@ const App = () => {
     halfling: ["Abrojo", "Acreverde", "Aguaoscura", "Alacaída", "Altocolina", "Alubia", "Amentos", "Anatinos", "Anca", "Árbolalto", "Árbolgrueso", "Árgana", "Barricaseta", "Bayamocha", "Bayasaúco", "Blancopuro", "Bolloculto", "Cachazudo", "Cándido", "Campolejano", "Cachazudo", "Cachazudo", "Ceñidor", "Charcamolino", "Chirimoya", "Cintalarga", "Cochiquera", "Colinaceniza", "Colinaverde", "Conejitos", "Cornejo", "Cubocola", "Cubrecuello", "Cuestabajo", "Dintel", "Duna", "Enaguas", "Espino", "Espolón", "Establogallo", "Exaltado", "Fajatrenzada", "Florblanca", "Florviento", "Florápida", "Flores", "Gancho", "Garañón", "Garrafón", "Gorrión", "Granocebada", "Hebillamiga", "Hojalaurel", "Jalalibros", "Lenteja", "Madriguera", "Manduca", "Manzana", "Manzanaverde", "Matacardo", "Mecehierba", "Montículo", "Panzatirante", "Pastafácil", "Pavaalegre", "Pieloco", "Pieraro", "Piesduros", "Piesencrespados", "Piesesquivos", "Pradobajo", "Riba", "Refunfuño", "Rompetochos", "Rocaraíz", "Sacoespino", "Sacrifición", "Sacolleno", "Sinculo", "Sonajahueso", "Soplacuerno", "Surcos", "Telapétalo", "Tiemblapanza", "Tizalarga", "Tonel", "Tripagrog", "Tropezíon", "Trotehermoso", "Tuétano", "Ulmaria", "Varasauce", "Vejete", "Vino-fuerte", "Zagamanzano", "Zampatartas", "Zarza"],
 
     enano: ["Al", "Ala", "Ath", "Athran", "Bal", "Bala", "Bara", "Bel", "Bela", "Bok", "Bor", "Bur", "Da", "Dam", "Dora", "Drok", "Drong", "Dur", "Dwal", "Ela", "Elda", "Elan", "Fa", "Far", "Fara", "Fima", "Firen", "Fur", "Fura", "Ga", "Gim", "Gol", "Gollen", "Got", "Gota", "Grim", "Gro", "Grun", "Hak", "Haka", "Har", "Hega", "Hur", "Kad", "Kar", "Kata", "Kaz", "Kaza", "Krag", "Logaz", "Lok", "Lun", "Mo", "Mola", "Mor", "Mora", "Nola", "Nor", "Noran", "Nun", "Oda", "Oka", "Olla", "Olf", "Oth", "Othra", "Ro", "Ror", "Roran", "Ska", "Skalla", "Skalf", "Skar", "Skor", "Skora", "Snor", "Snora", "Sven", "Thar", "Thor", "Thora", "Thron", "Thrun", "Thura", "Un", "Ulla", "Utha", "Vala", "Var", "Vara", "Zak", "Zaka", "Zakan", "Zam", "Zama", "Zara"]
-  }
+  };
 
   const nombreRaza_objeto = {
 
@@ -103,44 +102,97 @@ const App = () => {
     halfling: NombreHalfling(),
 
     enano: ["Bin", "Bor", "Dil", "Din", "Dok", "Dor", "Drin", "Fin", "Gan", "Gar", "Gil", "Gin", "Gni", "Grom", "Grond", "Grund", "Grunt", "Gul", "Gund", "Gun", "Ki", "Kin", "Krag", "Kri", "Krin", "Li", "Lin", "Lik", "Lok", "Lun", "Min", "Mir", "Nin", "Nir", "Rag", "Rik", "Rin", "Rin", "Rik", "Rik", "Rin", "Rin", "Rin", "Rin", "Rin", "Rin", "Ri", "Rig", "Run", "Rok", "Ror", "Skin", "Tin", "Tok", "Trek", "Trok", "Zin", "Zor"]
+  };
+
+  const procedenciaHumano_objeto = {
+
+    provincia: ["Averland", "Hochland", "Middenland", "Nordland", "Ostermark", "Ostland", "Reikland", "Stirland", "Talabecland", "Wissenland"],
+
+    seccion: ["Una Ciudad", "Un Pueblo próspero", "Un Pueblo mercantil", "Un Pueblo fortificado", "Una Aldea agrícola", "Una Aldea pobre", "Una Colonia pequeña", "Una Granja de cerdos o ganado", "Una Granja agrícola", "Una Choza"]
   }
+
+  const procedenciaRaza_objeto = {
+
+    humano: ProcedenciaHumano(),
+
+    enano: [ProcedenciaHumano(), "Karak Norn (Montañas Grises)","Karak Izor (Las Cuevas)","Karak Hirn (Montañas Negras)","Karak Kadrin (Montañas del Fin del Mundo)","Karak-A-Karak (Montañas del Fin del Mundo)","Zhufbar (Montañas del Fin del Mundo)","Barak Varr (Golfo Negro)"],
+
+    halfling: ["La Asamblea", ProcedenciaHumano()],
+
+    elfo: ["La Ciudad de Altdorf", "La Ciudad de Marienburgo", "El Bosque de Laurelorn", "El Gran Bosque", "Bosque de Reikwald"]
+  }
+
+  const marcasDistintivas_array = ["Picado de viruelas", "Rubicundo", "Cicatriz", "Tatuaje", "Pendiente", "Orejas irregulares", "Aro en la nariz", "Verruga", "Nariz rota", "Diente perdido", "Dientes torcidos", "Ojo vago", "Ceja(s) perdida(s)", "Dedo ampurado", "Uña perdida", "Andares característicos", "Olor peculiar", "Nariz enorme", "Lunar grande", "Pequeña calva", "Ojos de color extraño"]
 
   const talentosAleatorios_array = ["Ambidiestro", "Cortés", "Genio aritmético", "Guerrero nato", "Imperturbable", "Imitador", "Intelectual", "Muy fuerte", "Muy resistente", "Oído aguzado", "Pies ligeros", "Puntería", "Recio", "Reflejos rápidos", "Resistencia a enfermedades", "Resistencia a la magia", "Resistencia a venenos", "Robusto", "Sangre fría", "Sexto sentido", "Suerte", "Vista excelente"]
 
-  const habilidadesRaza_objeto = {
+  const marcasDistintivas_objeto = {
 
-    humano: ["Cotilleo", "Hablar idioma(Reikspiel)", "Sabiduría popular (el Imperio)"],
+    humano: marcasDistintivas_array,
 
-    elfo: ["Hablar idioma (Eltharin)", "Hablar idioma (Reikspiel)", "Sabiduría popular (Elfos)"],
+    enano: marcasDistintivas_array,
 
-    enano: ["Hablar idioma (Khazalid)", "Hablar idioma (Reikspiel)", "Oficio (Minero, Herrero o Cantero)", "Sabiduría popular (Enanos)"],
+    halfling: marcasDistintivas_array,
 
-    halfling: ["Cotilleo", "Hablar idioma (Halfling)", "Hablar idioma (Reikspiel)", "Oficio (Cocinero o Granjero)", "Sabiduría académica (Genealogía/Heráldica)", "Sabiduría popular (Halfling)"]
+    elfo: ["Ninguna"],
   }
 
+  const edad_objeto = {
+
+    humano: ["16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35"],
+
+    enano: ["20", "25", "30", "35", "40", "45", "50", "55", "60", "65", "70", "75", "80", "85", "90", "95", "100", "105", "110", "115"],
+
+    halfling: ["20", "22", "24", "26", "28", "30", "32", "34", "36", "38", "40", "42", "44", "46", "48", "50", "52", "54", "56", "58", "60"],
+
+    elfo: ["30", "35", "40", "45", "50", "55", "60", "65", "70", "75", "80", "85", "90", "95", "100", "105", "110", "115", "120", "125"]
+  }
+
+  const signosAstrales_array = ["Wimund el anacoreta. Signo de aguante", "La Gran Cruz. Signo de claridad", "El trazo del retratista. Signo de precisión", "El buey Gnuthus. Signo del ser obediente", "El pato Dragomas. Signo de valor", "El Crepúsculo. Signo de ilusiones y misterio", "El cinto de Grungni. Signo de intereses marciales", "Mammit el sabio. Signo de sabiduría", "Mummit el necio. Signo de instinto", "Los dos becerros. Signo de fertilidad y artesanía", "La bailarina. Signo de amor y atracción", "El tamborilero. Signo de excesos y hedonismo", "El gaitero. Signo de los embaucadores", "Vobist el exánime. Signo de oscuridad e incertidumbre", "El carro roto. Signo de orgullo", "El caldero de Rhya. Signo de piedad,e y creación", "El gallo Cackelfax. Signo de dinero y mercaderes", "El quebranta huesos. Signo de habilidad y aprendizaje", "La estrella bruja. Signo de magia"]
+
+  const habilidadesRaza_objeto = {
+
+    humano: ["Cotilleo, Hablar idioma(Reikspiel), Sabiduría popular (el Imperio)"],
+
+    elfo: ["Hablar idioma (Eltharin), Hablar idioma (Reikspiel), Sabiduría popular (Elfos)"],
+
+    enano: ["Hablar idioma (Khazalid), Hablar idioma (Reikspiel), Oficio (Minero, Herrero o Cantero), Sabiduría popular (Enanos)"],
+
+    halfling: ["Cotilleo, Hablar idioma (Halfling), Hablar idioma (Reikspiel), Oficio (Cocinero o Granjero), Sabiduría académica (Genealogía/Heráldica), Sabiduría popular (Halfling)"]
+  };
 
   const talentosRaza_objeto = {
 
-    humano: [TalentoAleatorio(), TalentoAleatorio()],
+    humano: [TalentoAleatorio() + ", " + TalentoAleatorio()],
 
-    elfo: ["Afinidad con el Aethyr o Especialista en armas (arco largo)", "Sangre fría o Intelectual", "Visión nocturna", "Vista exelente"],
+    elfo: ["Afinidad con el Aethyr o Especialista en armas (arco largo), Sangre fría o Intelectual, Visión nocturna, Vista exelente"],
 
-    enano: ["Artesanía enana", "Audaz", "Odio visceral", "Resistencia a la magia", "Robusto", "Visión nocturna"],
+    enano: ["Artesanía enana, Audaz, Odio visceral, Resistencia a la magia, Robusto, Visión nocturna"],
 
-    halfling: ["Especialidad en armas (honda)", "Resistencia al Caos", "Visión nocturna", TalentoAleatorio()]
-  }
+    halfling: ["Especialidad en armas (honda), Resistencia al Caos, Visión nocturna, " + TalentoAleatorio()]
+  };
 
 
   function TalentoAleatorio() {
 
     const talento = talentosAleatorios_array[Math.floor(Math.random() * talentosAleatorios_array.length)]
     return talento;
-  }
+  };
 
   function DosDeDiez() {
 
     const num1 = (Math.floor(Math.random() * 10) + 1) + (Math.floor(Math.random() * 10) + 1);
     return num1;
+  };
+
+  function ProcedenciaHumano() {
+    const parte1 = procedenciaHumano_objeto.provincia[[Math.floor(Math.random() *procedenciaHumano_objeto.provincia.length)]]
+
+    const parte2 = procedenciaHumano_objeto.seccion[[Math.floor(Math.random() *procedenciaHumano_objeto.seccion.length)]]
+
+    const completo = `${parte2} de ${parte1}` 
+    
+    return [completo]
   };
 
   function NombreElfo() {
@@ -153,7 +205,7 @@ const App = () => {
 
     const nombreElfo = parte1 + parte2 + parte3
     return [nombreElfo]
-  }
+  };
 
   function NombreHalfling() {
 
@@ -163,7 +215,7 @@ const App = () => {
 
     const nombreHalfling = parte1 + parte2
     return [nombreHalfling]
-  }
+  };
 
   // Define las profesiones para cada raza
   const profesionesRaza_objeto = {
@@ -183,17 +235,17 @@ const App = () => {
       Nombre: "Alborotador",
       HA: "+5%",
       HP: "+5%",
-      F:  "---",
-      R:  "+5%",
+      F: "---",
+      R: "+5%",
       Ag: "+5%",
-      Int:"+10%",
+      Int: "+10%",
       FV: "---",
       Em: "+10%",
-      A:  "---",
-      H:  "2",
-      M:  "---",
-      Mag:"---",
-      Habilidades: "Carisma, Esconderse, Hablar idioma (Bretón o Tileano), Hablar idioma (Reikspiel), leer y escribir, Persepcion, Sabiduria academica (Historia) o Cotilleo,Sabiduría académicica (Leyes) o Sabiduría popular (el Imperio)",
+      A: "---",
+      H: "2",
+      M: "---",
+      Mag: "---",
+      Habilidades: "Carisma, Esconderse, Hablar idioma (Bretón o Tileano), Hablar idioma (Reikspiel), leer y escribir, Persepcion, Sabiduria academica (Historia) o Cotilleo, Sabiduría académicica (Leyes) o Sabiduría popular (el Imperio)",
       Talentos: "!A correr!, Don de gentes, Sangre fría o Pelea callejera",
       Enseres: "Armadura ligera (chaqueta de cuero), una muda de ropa de buena artesania, 2d10 octavillas para causas diversas",
       Accesos: "Burges, capitán, escriba, estudiante, fanatico, heraldo, salteador de camínos, sirviente",
@@ -229,7 +281,7 @@ const App = () => {
       R: "---",
       Ag: "+5%",
       Int: "+10%",
-      FV: "15",
+      FV: "+15%",
       Em: "+5%",
       A: "---",
       H: "2",
@@ -243,7 +295,7 @@ const App = () => {
     },
 
     Artista: {
-      Nombre: "",
+      Nombre: "Artista",
       HA: "+5%",
       HP: "+10%",
       F: "---",
@@ -256,7 +308,7 @@ const App = () => {
       H: "2",
       M: "---",
       Mag: "---",
-      Habilidades: "Actuar (dos cualquiera) Carisma, Criar animales o Nadar,Hablar idioma (Reikspiel), Percepción, Sabiduría popular (el Imperio),Tasar o Cotilleo. Una cualquiera de las siguientes: Adiestrar animales, Carisma animal, Charlatanería, Escalar, Hipnotismo, Montar, Prestidigitacion, Ventriloquia, Contorcionismo",
+      Habilidades: "Actuar (dos cualquiera) Carisma, Criar animales o Nadar, Hablar idioma (Reikspiel), Percepción, Sabiduría popular (el Imperio),Tasar o Cotilleo. Una cualquiera de las siguientes: Adiestrar animales, Carisma animal, Charlatanería, Escalar, Hipnotismo, Montar, Prestidigitacion, Ventriloquia, Contorcionismo",
       Talentos: "Dos cualesquiera de los siguientes: Certero, Desenvainado rápido, Don de gentes, Actútación acrobática, Especialista en armas (Arrojadizas) , lmítador, Lucha, Muy fuerte, Reflejos rápidos, Contorcionista",
       Enseres: "Armadura ligera (justillo de cuero), uno cualquiera de los siguientes: instrumento musical (cualquiera), herramientas del oficio (actor), cuchillos arrojadizos, 2 hachas arrojadizas. uno cualquiera de los siguientes: disfraz, una muda de ropa de buena anesanía",
       Accesos: "Bribón, heraldo, ladrón, vagabundo",
@@ -340,7 +392,7 @@ const App = () => {
       H: "2",
       M: "---",
       Mag: "---",
-      Habilidades: "Conrumir alcohol o Cotilleo,Lengua secreta (jerga montaraz) o Hablar idioma (Kisleviano), Nadar, Navegar, Orientación, Percepción, Remar, Sabidurla popular (el Imperio o Kislev), Supervivencia",
+      Habilidades: "Conrumir alcohol o Cotilleo, Lengua secreta (jerga montaraz) o Hablar idioma (Kisleviano), Nadar, Navegar, Orientación, Percepción, Remar, Sabidurla popular (el Imperio o Kislev), Supervivencia",
       Talentos: "Orientación, Viajero curtido",
       Enseres: "Armadura ligera (chaqueta de cuero), bote de remos",
       Accesos: "Barquero, contrabandista",
@@ -385,7 +437,7 @@ const App = () => {
       Habilidades: "Actuar (Actor o Narrador), Buscar o Lengua secreta (Jerga de ladrones), Carisma, Charlataneria, cotilleo o Regatear, Hablar idioma (Reikspiel), Jugar o Código secreto (Ladrón), Percepción, Tasar",
       Talentos: "!A correr! o Callejeo, Don de gentes, Suerte o Sexto sentido",
       Enseres: "Una muda de ropa de la mejor artesanía o dados o baraja de cartas, 1d10 co.",
-      Accesos: "Alborotador, artista, asesino,ayudante de cámara, duelista, embajador, espadachin estaliano, ladrón, marinero, noble",
+      Accesos: "Alborotador, artista, asesino, ayudante de cámara, duelista, embajador, espadachin estaliano, ladrón, marinero, noble",
       Salidas: "Artista, charlatán, demagogo, forajido, ladrón,sirviente"
     },
 
@@ -424,7 +476,7 @@ const App = () => {
       H: "2",
       M: "---",
       Mag: "---",
-      Habilidades: "Adiestrar animales o Nadar, Carisma animal u Oficio (Cocinero),Conducir u Oficio(Arquero), Criar animales o Carisma, Escalar o Movimiento silencioso, Esconderse, Jugar o Actuar (bailarín o Cantante), Remar o Poner trampas, Supervivencia u Oficio (Granjero)",
+      Habilidades: "Adiestrar animales o Nadar, Carisma animal u Oficio (Cocinero), Conducir u Oficio(Arquero), Criar animales o Carisma, Escalar o Movimiento silencioso, Esconderse, Jugar o Actuar (bailarín o Cantante), Remar o Poner trampas, Supervivencia u Oficio (Granjero)",
       Talentos: "!A correr! o Especialista en armas (Honda), Recio o Errante",
       Enseres: "Honda o báculo, redoma de cuero",
       Accesos: "Ninguno",
@@ -446,7 +498,7 @@ const App = () => {
       M: "---",
       Mag: "---",
       Habilidades: "Buscar, Código secreto (Montaraz), Conducir o Cotilleo, Escalar, Percepción, Regatear, Sabiduría popular (el Imperio) o Esconderse, Supervivencia",
-      Talentos: "!A correr!,Intelectual o Muy fuerte",
+      Talentos: "!A correr!, Intelectual o Muy fuerte",
       Enseres: "3 antorchas, yesquero, arma de mano (hacha)",
       Accesos: "Campesino, cazador, miembro de séquito, minero",
       Salidas: "Batidor, cazador, leñador, minero, vagabundo"
@@ -468,7 +520,7 @@ const App = () => {
       Mag: "---",
       Habilidades: "Buscar, Consumir alcohol, Esquivar, Intimidar, Mando, percepción, Sanar o prestidigitación",
       Talentos: "Especialista en armas (Presa), Lucha, Resistencia a enfermedades, Resistencia a venenos",
-      Enseres: "Botella de vino común, pichel, uno cualquiera de los siguientes:boleadoras, mangual,red",
+      Enseres: "Botella de vino común, pichel, uno cualquiera de los siguientes:boleadoras, mangual, red",
       Accesos: "Cazarratas, guardaespaldas",
       Salidas: "Alguacil, cazarratas, guardaespaldas, interrogador, vigilante"
     },
@@ -476,7 +528,7 @@ const App = () => {
     Cazador: {
       Nombre: "Cazador",
       HA: "---",
-      HP: "15",
+      HP: "+15%",
       F: "---",
       R: "+5%",
       Ag: "+10%",
@@ -552,7 +604,7 @@ const App = () => {
       Mag: "---",
       Habilidades: "Código secreto (Montaraz), Conducir, Cotilleo o Regatear, Criar animales, Hablar idioma (Bretón, Kisleviano o Tileano), Orientación, Percepción, Sanar o Montar",
       Talentos: "Desenvainado rápido o Viajero curtido, Especialista en armas (Pólvora)",
-      Enseres: "Trabuco con pólvora y munición suficieme para 10 disparos,annadura media (camisa de mallas y chaqueta de cuero), instrumento (corneta de carruaje)",
+      Enseres: "Trabuco con pólvora y munición suficieme para 10 disparos, armadura media (camisa de mallas y chaqueta de cuero), instrumento (corneta de carruaje)",
       Accesos: "Forajido, mensajero",
       Salidas: "Barquero, batidor, contrabandista, forajido, patrulla de caminos, peajero, salteador de caminos"
     },
@@ -573,7 +625,7 @@ const App = () => {
       Mag: "---",
       Habilidades: "Buscar, Conducir, Cotilleo o Lengua secreta (Jerga de ladrones), Hablar idioma (Bretón o Kisleviano) o Código secreto (ladrón), Movimiento silencioso, Nadar, Percepción, Regatear, Remar, Tasar",
       Talentos: "Negociador o Callejeo",
-      Enseres: "Armadura ligera (chaqueta de cuero), 2 antorchas,caballo de tiro y carreta o bote de remos",
+      Enseres: "Armadura ligera (chaqueta de cuero), 2 antorchas, caballo de tiro y carreta o bote de remos",
       Accesos: "Alguacil, barquero, batelero, cochero, guardia marina, ingeniero, marinero, miembro de séquito, minero, osamentero, posadero,  rompescudos",
       Salidas: "Barquero, batelero, charlatán, ladrón, marinero, perista,  rompescudos"
     },
@@ -638,7 +690,7 @@ const App = () => {
       Talentos: "Lingüística",
       Enseres: "Cuchillo, un par de velas, cera, s cerillas, libro con ilustraciones, material de escritura",
       Accesos: "Aprendiz de hechizero, iniciado",
-      Salidas: "Alborotador, aprendiz de hechicero, erudito, iniciado,navegante"
+      Salidas: "Alborotador, aprendiz de hechicero, erudito, iniciado, navegante"
     },
 
     Escudero: {
@@ -664,7 +716,7 @@ const App = () => {
 
     EspadachinEstaliano: {
       Nombre: "Espadachin estaliano",
-      HA: "15",
+      HA: "+15%",
       HP: "---",
       F: "+5%",
       R: "+5%",
@@ -697,10 +749,10 @@ const App = () => {
       H: "2",
       M: "---",
       Mag: "---",
-      Habilidades: "Carisma o Consumir alcohol, Hablar idioma (clásico),Hablar idioma (Reikspiel), Leer/escribir, Percepción, Sabiduría académica (una cualquiera), Sabiduría académica (una cualquiera) o Cotilleo, Sanar o Buscar",
+      Habilidades: "Carisma o Consumir alcohol, Hablar idioma (clásico), Hablar idioma (Reikspiel), Leer/escribir, Percepción, Sabiduría académica (una cualquiera), Sabiduría académica (una cualquiera) o Cotilleo, Sanar o Buscar",
       Talentos: "Etiqueta o Lingüistica, intelectual o Cortes, Viajero curtido o Genio aritmético",
       Enseres: "Dos libros de texto correspondientes a las habilidades de Sabiduría, material de escritura",
-      Accesos: "Ayuda de cámara, embajador, juglar, ladrón de tumbas,noble",
+      Accesos: "Ayuda de cámara, embajador, juglar, ladrón de tumbas, noble",
       Salidas: "Alborotador, aprendiz de hechicero, barbero cirujano, embajador, erudito, galeno, ingeniero, iniciado"
     },
 
@@ -748,7 +800,7 @@ const App = () => {
 
     Gladiador: {
       Nombre: "Gladiador",
-      HA: "15",
+      HA: "+15%",
       HP: "---",
       F: "---",
       R: "+10%",
@@ -761,7 +813,7 @@ const App = () => {
       M: "---",
       Mag: "---",
       Habilidades: "Esquivar, Intimidar",
-      Talentos: "Desarmar o Lucha, Desenvainado rápido o Golpe letal, Especialista en armas (A dos manos), Especialista en armas (Mangual),Especialista en armas (Parada), Golpe poderoso, Muy fuerte o Imperturbable",
+      Talentos: "Desarmar o Lucha, Desenvainado rápido o Golpe letal, Especialista en armas (A dos manos), Especialista en armas (Mangual), Especialista en armas (Parada), Golpe poderoso, Muy fuerte o Imperturbable",
       Enseres: "Mangual o arma grande, cesto, escudo o rodela, armadura media (camisa de mallas y chaqueta de cuero)",
       Accesos: "Bersérker nórdico, matón, rompescudos, sicario",
       Salidas: "Cazarrccompensas,  matatrolls, mercenario, sicario, veterano"
@@ -823,11 +875,11 @@ const App = () => {
       H: "3",
       M: "---",
       Mag: "---",
-      Habilidades: "Consumir alcohol,Cotilleo o Lengua secreta (Jerga militar), Esquivar, Intimidar, Nadar, Remar, Sabiduría popular (la Tierras Desoladas) o Jugar",
+      Habilidades: "Consumir alcohol, Cotilleo o Lengua secreta (Jerga militar), Esquivar, Intimidar, Nadar, Remar, Sabiduría popular (la Tierras Desoladas) o Jugar",
       Talentos: "Desarmar o Desenvainado rápido, Golpe conmocionador, Golpe poderoso",
       Enseres: "Arco o ballesta con 10 flechas o virotes, armadura ligera (chaqueta de cuero), escudo, gancho de escalada, 10 metros de cuerda",
       Accesos: "Batelero, marinero, pescador",
-      Salidas: "Contrabandista, forajido, matón, sargento,segundo de a bordo"
+      Salidas: "Contrabandista, forajido, matón, sargento, segundo de a bordo"
     },
 
     HechiceroVulgar: {
@@ -844,7 +896,7 @@ const App = () => {
       H: "2",
       M: "---",
       Mag: "+1",
-      Habilidades: "Buscar, Canalización, Carisma o lntimidar,carisma animal u Oficio (Boticario), Criar animales o Regatear, Percepción, Sanar o Hipnotismo, Sentir magia",
+      Habilidades: "Buscar, Canalización, Carisma o lntimidar, carisma animal u Oficio (Boticario), Criar animales o Regatear, Percepción, Sanar o Hipnotismo, Sentir magia",
       Talentos: "Magia pueril (Vulgar), Magia vulgar",
       Enseres: "Poción curativa , capucha",
       Accesos: "Ninguno",
@@ -899,7 +951,7 @@ const App = () => {
       HP: "+5%",
       F: "---",
       R: "---",
-      Ag: "15",
+      Ag: "+15%",
       Int: "+5%",
       FV: "---",
       Em: "+10%",
@@ -970,7 +1022,7 @@ const App = () => {
       H: "2",
       M: "---",
       Mag: "---",
-      Habilidades: "Consumir alcohol o Percepción, Escalar, Esquivar, Hablar idioma (Breton, Nórdico o Tileano), Nadar, Navegar, Remar, Sabiduria popular (Bretonia, Norsca,Tileas, Tierras desoladas)",
+      Habilidades: "Consumir alcohol o Percepción, Escalar, Esquivar, Hablar idioma (Breton, Nórdico o Tileano), Nadar, Navegar, Remar, Sabiduria popular (Bretonia, Norsca, Tileas, Tierras desoladas)",
       Talentos: "Golpe poderoso o Brioso, Recio o Pelea callejera, Viajero curtido",
       Enseres: "Armadura ligera (justillo de cuero), botella de licor de mala artesania",
       Accesos: "Barquero, batelero, berserker nórdico, contrabandista, embajador, pescador",
@@ -1096,11 +1148,11 @@ const App = () => {
       H: "2",
       M: "---",
       Mag: "---",
-      Habilidades: "Buscar, Carisma o Tasar, Cotilleo, Criar animales o Conducir, Percepción, Regatear, una cualquiera de las siguientes: Oficio (Arcabucero, Armero,Arquero,Cartógrafo, Cocinero, Forjador de armaduras, Herbolario, Herrero, Mercader o Sastre) , Hablar idioma (Bretón, Kisleviano o Tileano), prestidigitación",
+      Habilidades: "Buscar, Carisma o Tasar, Cotilleo, Criar animales o Conducir, Percepción, Regatear, una cualquiera de las siguientes: Oficio (Arcabucero, Armero, Arquero, Cartógrafo, Cocinero, Forjador de armaduras, Herbolario, Herrero, Mercader o Sastre) , Hablar idioma (Bretón, Kisleviano o Tileano), prestidigitación",
       Talentos: "!A correr!, Negociador o Pelea callejera, Recio o Cortés, Resistencia a enfermedades o Viajero curtido",
       Enseres: "Amuleto de buena suerte o herramientas del oficio, bolsa, tienda",
-      Accesos: "Osarnentero,sirviente",
-      Salidas: "Carbonero,contrabandista, charlatán, espía, menestral, sirviente, vagabundo"
+      Accesos: "Osarnentero, sirviente",
+      Salidas: "Carbonero, contrabandista, charlatán, espía, menestral, sirviente, vagabundo"
     },
 
     Miliciano: {
@@ -1117,7 +1169,7 @@ const App = () => {
       H: "2",
       M: "---",
       Mag: "---",
-      Habilidades: "Buscar, Conducir o Nadar, Criar animales, Esquivar,Jugar o Cotilleo, Oficio (cualquiera), Percepción, Supervivencia",
+      Habilidades: "Buscar, Conducir o Nadar, Criar animales, Esquivar, Jugar o Cotilleo, Oficio (cualquiera), Percepción, Supervivencia",
       Talentos: "Especialista en armas (A dos manos) o Recarga rápida, Golpe poderoso",
       Enseres: "Alabarda o arco con 10 flechas, armadura ligera (chaqueta de cuero y gorro de cuero), uniforme",
       Accesos: "Alguacil, artesano, burgués, campesino, leñador, menestral, mercader, pescador",
@@ -1183,7 +1235,7 @@ const App = () => {
       Habilidades: "Buscar, Carisma o Cotilleo, Conducir, Criar animales, Percepción, Regatear, Sabiduría popular (el Imperio), Tasar",
       Talentos: "Recio o Resistencia a enfermedades, Sangre fría o Callejeo",
       Enseres: "Carreta, 3 sacas",
-      Accesos: "Campesino, cazarratas,vagabundo",
+      Accesos: "Campesino, cazarratas, vagabundo",
       Salidas: "Contrabandista, ladrón de guante blanco, ladrón de tumbas, miembro de séquito, perista"
     },
 
@@ -1203,7 +1255,7 @@ const App = () => {
       Mag: "---",
       Habilidades: "Buscar, Conducir, Criar animales, Montar, Orientación, Percepción, Rastrear o Codigo secreto (Batidor), Sabiduría popular (el Imperio) o Cotilleo, Supervivencia",
       Talentos: "Desenvainado rápido o Recarga rápida, Especialista en armas (Pólvora)",
-      Enseres: "Pistola con 10 balas y pólvora, armadura media (camisa de mallas y chaqueta de cuero),escudo, 10 metros de cuerda,caballo de guerra ligero con silla y arreos (o poni para los halflings)",
+      Enseres: "Pistola con 10 balas y pólvora, armadura media (camisa de mallas y chaqueta de cuero), escudo, 10 metros de cuerda, caballo de guerra ligero con silla y arreos (o poni para los halflings)",
       Accesos: "Barquero, cochero, escolta, mensajero, vigilante",
       Salidas: "Batidor, escolta, forajido, mensajero, peajero, salteador de caminos, sargento"
     },
@@ -1246,7 +1298,7 @@ const App = () => {
       Habilidades: "Buscar, Cotilleo o Regatear, Esquivar, Hablar idioma (Bretón, Kisleviano o Tileano) , Leer/escribir, Percepción, Tasar",
       Talentos: "Reflejos rápidos o Puntería",
       Enseres: "Cofre, ballesta con 10 virotes, armadura media (camisa de mallas y justillo de cuero), escudo, 1d10 co",
-      Accesos: "Alguacil, cochero,patrulla de caminos",
+      Accesos: "Alguacil, cochero, patrulla de caminos",
       Salidas: "Barquero, forajido, ladrón, patrulla fronteriza, político, salteador de caminos, soldado"
     },
 
@@ -1286,10 +1338,10 @@ const App = () => {
       M: "+1",
       Mag: "---",
       Habilidades: "Código secreto (Batidor), Esquivar, Nadar, Orientación, Percepción,  Supervivencia",
-      Talentos: "!Acorrer!,Muy resistente o Muy fuerte, Orientación, Pies ligeros o Sexto sentido, Recarga rápida",
+      Talentos: "!Acorrer!, Muy resistente o Muy fuerte, Orientación, Pies ligeros o Sexto sentido, Recarga rápida",
       Enseres: "Ballesta con 10 virotes, armadura ligera (justillo de cuero), poción curativa, amuleto de buena suerte",
       Accesos: "Rompescudos",
-      Salidas: "Batidor, cazarratas,rompescudos, saqueador de tumbas, veterano"
+      Salidas: "Batidor, cazarratas, rompescudos, saqueador de tumbas, veterano"
     },
 
     Rompescudos: {
@@ -1349,11 +1401,10 @@ const App = () => {
       M: "---",
       Mag: "---",
       Habilidades: "Cotilleo o Regatear, Esquivar, Intimidar, Montar",
-      Talentos: "Amenazador o Conés, Desarmar o Desenvainado rápido, Golpe conmocionador, Golpe letal, Golpe poderoso, Pelea callejera",
+      Talentos: "Amenazador o Cortés, Desarmar o Desenvainado rápido, Golpe conmocionador, Golpe letal, Golpe poderoso, Pelea callejera",
       Enseres: "Armadura media (camisa de mallas y chaqueta de cuero), escudo, caballo de monta con silla y arreos",
       Accesos: "Alguacil, cazarrecompensas, espadachín estaliano, gladiador, guardaespaldas",
       Salidas: "Duelista, extorcionador, gladiador, ladrón, matón"
-
     },
 
     Sirviente: {
@@ -1412,7 +1463,7 @@ const App = () => {
       H: "2",
       M: "---",
       Mag: "---",
-      Habilidades: "Actuar (Bailarín ,Cantante o Narrador) o Codigo secreto (Montaraz o Ladron)' Cotilleo o Lengua secreta (Jerga montaraz o Jerga de ladrones), Movimiento silencioso, Orientacion, Regatear o Nadar, Sabiduría popular (Breconia, Estalia, Kislev o Tilea), sanar o Percepción, Supervivencia",
+      Habilidades: "Actuar (Bailarín , Cantante o Narrador) o Codigo secreto (Montaraz o Ladron) Cotilleo o Lengua secreta (Jerga montaraz o Jerga de ladrones), Movimiento silencioso, Orientacion, Regatear o Nadar, Sabiduría popular (Breconia, Estalia, Kislev o Tilea), sanar o Percepción, Supervivencia",
       Talentos: "Pies ligeros o Errante, Punteria u Orientación, Viajero curtído",
       Enseres: "Mochila, raciones (1 semana), tienda, odre",
       Accesos: "Artista, barbero cirujano, carbonero, embajador, forajido, guerrero de camarilla, hechizero vulgar, ladrón de guante blanco, leñador, miembro de séquito, patrulla fronteriza, soldado",
@@ -1440,30 +1491,31 @@ const App = () => {
       Salidas: "Extorsionador, menestral, mercenario, patrulla de caminos, sargento, soldado"
     },
 
-  }
+  };
 
   const heridasRaza_objeto = {
 
     humano: [10, 10, 10, 11, 11, 11, 12, 12, 12, 13],
-    
+
     enano: [11, 11, 11, 12, 12, 12, 13, 13, 13, 14],
-    
+
     halfling: [8, 8, 8, 9, 9, 9, 10, 10, 10, 11],
-    
+
     elfo: [9, 9, 9, 10, 10, 10, 11, 11, 11, 12],
-  }
+  };
 
   const alturaRaza_objeto = {
 
     humano: 165 + DosDeDiez(),
-    
+
     enano: 135 + DosDeDiez(),
-    
+
     halfling: 105 + DosDeDiez(),
-    
+
     elfo: 170 + DosDeDiez()
 
-  }
+  };
+
   const pesoRaza_objeto = {
 
     humano: [47, 50, 52, 54, 56, 59, 61, 63, 65, 68, 70, 72, 74, 77, 79, 81, 86, 90, 95, 100],
@@ -1473,7 +1525,7 @@ const App = () => {
     halfling: [34, 34, 36, 36, 38, 38, 40, 43, 45, 45, 47, 50, 52, 54, 56, 59, 61, 63, 65],
 
     elfo: [36, 38, 40, 43, 45, 47, 50, 51, 56, 59, 61, 63, 65, 68, 70, 72, 74, 77, 79]
-  }
+  };
 
   const colorDePelo_objeto = {
 
@@ -1484,7 +1536,7 @@ const App = () => {
     halfling: ["Rubio ceniza", "Rubio oscuro", "Rubio", "Rubio", "Cobrizo", "Rojo", "Castaño claro", "Castaño", "Castaño oscuro", "Negro"],
 
     elfo: ["Plateado", "Rubio ceniza", "Rubio oscuro", "Rubio", "Cobrizo", "Castaño claro", "Castaño claro", "Castaño", "Castaño oscuro", "Negro"]
-  }
+  };
 
   const colorDeOjos_objeto = {
 
@@ -1495,7 +1547,7 @@ const App = () => {
     halfling: ["Azules", "Avellana", "Avellana", "Marrón claro", "Marrón claro", "Marrones", "Marrones", "Marrón oscuro", "Marrón oscuro", "Marrón oscuro"],
 
     elfo: ["Zarco", "Azules", "Verdes", "Cobrizos", "Marrón claro", "Marrones", "Marrón oscuro", "Plateados", "Violetas", "Negros"]
-  }
+  };
 
   const destinoRaza_objeto = {
 
@@ -1504,9 +1556,9 @@ const App = () => {
     enano: [1, 1, 1, 1, 2, 2, 2, 2, 2, 2],
 
     halfling: [2, 2, 2, 2, 2, 2, 2, 3, 3, 3],
-    
+
     elfo: [1, 1, 1, 1, 2, 2, 2, 3, 3, 3],
-  }
+  };
 
 
   const [mensaje, setMensaje] = useState('Bienvenidos al generador de personajes de Warhammer Fantasy 2nd Edition. Toque el botón para iniciar el generador.');
@@ -1517,16 +1569,28 @@ const App = () => {
     const razas = ['humano', 'enano', 'halfling', 'elfo'];
 
     const razaAleatoria = razas[Math.floor(Math.random() * razas.length)]
-    
+
     const profesiones = profesionesRaza_objeto[razaAleatoria]
 
     const profesionAleatoria = profesiones[Math.floor(Math.random() * profesiones.length)];
 
+    const edad = edad_objeto[razaAleatoria]
+
+    const edadAleatoria = edad [Math.floor(Math.random() * edad.length)];
+
+    const signoAstralAleatorio = signosAstrales_array[[Math.floor(Math.random() * signosAstrales_array.length)]];
+
+    const procedencia = procedenciaRaza_objeto[razaAleatoria]
+
+    const procedenciaAleatoria = procedencia[Math.floor(Math.random() * procedencia.length)];
+
+    const marcaDistintiva = marcasDistintivas_objeto[razaAleatoria]
+
+    const marcaDistintivaAleatoria = marcaDistintiva[Math.floor(Math.random() * marcaDistintiva.length)]
+
     const razaStats = caracteristicasRaza_objeto[razaAleatoria]
 
-    const profesion = profesiones_objeto[profesionAleatoria] 
-
-    console.log(profesiones,profesionAleatoria,profesion)
+    const profesion = profesiones_objeto[profesionAleatoria]
 
     const heridas = heridasRaza_objeto[razaAleatoria]
 
@@ -1576,6 +1640,10 @@ const App = () => {
       peso: pesoAleatorio,
       pelo: peloAleatorio,
       ojos: ojosAleatorio,
+      edad: edadAleatoria,
+      signo: signoAstralAleatorio,
+      marca: marcaDistintivaAleatoria,
+      procedencia: procedenciaAleatoria,
       habilidadesDeRaza: habilidadesDeRaza,
       talentosDeRaza: talentosDeRaza,
       caracteristicas: {
@@ -1592,7 +1660,7 @@ const App = () => {
       },
       caracteristicasDeRaza: {
 
-        titulo: razaStats.caracRaza,
+        Titulo: razaStats.caracRaza,
         HA: razaStats.HA,
         HP: razaStats.HP,
         F: razaStats.F,
@@ -1605,17 +1673,17 @@ const App = () => {
 
       profesion: {
         Nombre: profesion.Nombre,
-        HA:  profesion.HA,
-        HP:  profesion.HP,
-        F:   profesion.F,
-        R:   profesion.R,
-        Ag:  profesion.Ag,
+        HA: profesion.HA,
+        HP: profesion.HP,
+        F: profesion.F,
+        R: profesion.R,
+        Ag: profesion.Ag,
         Int: profesion.Int,
-        FV:  profesion.FV,
-        Em:  profesion.Em,
-        A:   profesion.A,
-        H:   profesion.H,
-        M:   profesion.M,
+        FV: profesion.FV,
+        Em: profesion.Em,
+        A: profesion.A,
+        H: profesion.H,
+        M: profesion.M,
         Mag: profesion.Mag,
         Habilidades: profesion.Habilidades,
         Talentos: profesion.Talentos,
@@ -1642,10 +1710,14 @@ const App = () => {
             <p><b>Puntos de Destino:</b> {personaje.destino}</p>
             <p><b>Movimiento:</b> {personaje.movimiento}</p>
             <p><b>Habilidades por raza:</b></p>
-            <p>{personaje.habilidadesDeRaza.join(', ')}</p>
+            <p>{personaje.habilidadesDeRaza}</p>
             <p><b>Talentos por raza:</b></p>
-            <p>{personaje.talentosDeRaza.join(', ')}</p>
+            <p>{personaje.talentosDeRaza}</p>
             <div>
+
+
+
+
               <table>
                 <thead>
                   <tr>
@@ -1673,7 +1745,7 @@ const App = () => {
                     <td>{personaje.caracteristicas.Em}</td>
                   </tr>
                   <tr>
-                    <td>{personaje.caracteristicasDeRaza.titulo}</td>
+                    <td>{personaje.caracteristicasDeRaza.Titulo}</td>
                     <td>{personaje.caracteristicasDeRaza.HA}</td>
                     <td>{personaje.caracteristicasDeRaza.HP}</td>
                     <td>{personaje.caracteristicasDeRaza.F}</td>
@@ -1696,13 +1768,116 @@ const App = () => {
                   </tr>
                 </tbody>
               </table>
+
+
+
+
             </div>
             <h2>Profesión: {personaje.profesion.Nombre}</h2>
+            <h3>Caracteristicas primarias</h3>
+            <table>
+              <thead>
+                <tr>
+                  <th>Nombre Caracteristicas</th>
+                  <th>HA</th>
+                  <th>HP</th>
+                  <th>F</th>
+                  <th>R</th>
+                  <th>Ag</th>
+                  <th>Int</th>
+                  <th>FV</th>
+                  <th>Em</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Stats iniciales</td>
+                  <td>{personaje.caracteristicasDeRaza.HA + personaje.caracteristicas.HA}</td>
+                  <td>{personaje.caracteristicasDeRaza.HP + personaje.caracteristicas.HP}</td>
+                  <td>{personaje.caracteristicasDeRaza.F + personaje.caracteristicas.F}</td>
+                  <td>{personaje.caracteristicasDeRaza.R + personaje.caracteristicas.R}</td>
+                  <td>{personaje.caracteristicasDeRaza.Ag + personaje.caracteristicas.Ag}</td>
+                  <td>{personaje.caracteristicasDeRaza.Int + personaje.caracteristicas.Int}</td>
+                  <td>{personaje.caracteristicasDeRaza.FV + personaje.caracteristicas.FV}</td>
+                  <td>{personaje.caracteristicasDeRaza.Em + personaje.caracteristicas.Em}</td>
+                </tr>
+                <tr>
+                  <td>Mejoras por {personaje.profesion.Nombre}</td>
+                  <td>{personaje.profesion.HA}</td>
+                  <td>{personaje.profesion.HP}</td>
+                  <td>{personaje.profesion.F}</td>
+                  <td>{personaje.profesion.R}</td>
+                  <td>{personaje.profesion.Ag}</td>
+                  <td>{personaje.profesion.Int}</td>
+                  <td>{personaje.profesion.FV}</td>
+                  <td>{personaje.profesion.Em}</td>
+                </tr>
+              </tbody>
+            </table>
+
+
+
+
+            <h3>Caracteristicas secundarias</h3>
+            <table>
+              <thead>
+                <tr>
+                  <th>Nombre Caracteristicas</th>
+                  <th>A</th>
+                  <th>H</th>
+                  <th>BF</th>
+                  <th>BR</th>
+                  <th>M</th>
+                  <th>Mag</th>
+                  <th>PL</th>
+                  <th>PD</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Stats iniciales</td>
+                  <td>1</td>
+                  <td>{personaje.heridas}</td>
+                  <td>{Math.floor((personaje.caracteristicasDeRaza.F + personaje.caracteristicas.F)/10)}</td>
+                  <td>{Math.floor((personaje.caracteristicasDeRaza.R + personaje.caracteristicas.R)/10)}</td>
+                  <td>{personaje.movimiento}</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>{personaje.destino}</td>
+                </tr>
+                <tr>
+                  <td>Mejoras por {personaje.profesion.Nombre}</td>
+                  <td>{personaje.profesion.A}</td>
+                  <td>+{personaje.profesion.H}</td>
+                  <td>---</td>
+                  <td>---</td>
+                  <td>{personaje.profesion.M}</td>
+                  <td>{personaje.profesion.Mag}</td>
+                  <td>---</td>
+                  <td>---</td>
+                </tr>
+              </tbody>
+            </table>
+            <p><b>Habilidades profesion:</b></p>
+            <p>{personaje.profesion.Habilidades}</p>
+            <p><b>Talentos profesion:</b> </p>
+            <p>{personaje.profesion.Talentos}</p>
+            <p><b>Enseres profesion:</b></p>
+            <p>{personaje.profesion.Enseres}</p>
+            <p><b>Accesos a la profesion:</b></p>
+            <p>{personaje.profesion.Accesos}</p>
+            <p><b>Salidas de la profesion:</b></p>
+            <p>{personaje.profesion.Salidas}</p>
+
             <h3>Rasgos fisicos</h3>
+            <p>Nacido en: {personaje.procedencia}</p>
+            <p>edad: {personaje.edad} años</p>
+            <p>Signo Astral: {personaje.signo}</p>
             <p>Altura: {personaje.altura} cm</p>
             <p>Peso: {personaje.peso} kg</p>
             <p>Color de pelo: {personaje.pelo}</p>
             <p>Color de ojos: {personaje.ojos}</p>
+            <p>Marca distintiva: {personaje.marca}</p>
           </div>
         )}
       </div>
